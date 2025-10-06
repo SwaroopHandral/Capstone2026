@@ -3628,6 +3628,12 @@
 		(uuid "d129c2e7-86a4-45d2-8454-83ac7dfdf981")
 	)
 	(junction
+		(at 134.62 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb80498b-31ee-415f-9bd6-ff9a217bf87a")
+	)
+	(junction
 		(at 142.24 95.25)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3674,7 +3680,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 95.25) (xy 143.51 95.25)
+			(xy 142.24 95.25) (xy 147.32 95.25)
 		)
 		(stroke
 			(width 0)
@@ -4494,7 +4500,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 102.87) (xy 118.11 102.87)
+			(xy 147.32 102.87) (xy 134.62 102.87)
 		)
 		(stroke
 			(width 0)
@@ -5204,6 +5210,16 @@
 	)
 	(wire
 		(pts
+			(xy 134.62 102.87) (xy 118.11 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c7da3742-7658-4316-b94c-8a0241b07210")
+	)
+	(wire
+		(pts
 			(xy 52.07 151.13) (xy 54.61 151.13)
 		)
 		(stroke
@@ -5434,6 +5450,16 @@
 	)
 	(wire
 		(pts
+			(xy 147.32 95.25) (xy 147.32 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eac81ca4-a926-4ef6-9025-00d666c7fef6")
+	)
+	(wire
+		(pts
 			(xy 54.61 151.13) (xy 54.61 148.59)
 		)
 		(stroke
@@ -5521,16 +5547,6 @@
 			(type default)
 		)
 		(uuid "f8d9e0a9-4adb-41e2-8bdd-c2e063ff0d45")
-	)
-	(wire
-		(pts
-			(xy 147.32 99.06) (xy 147.32 102.87)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fa7cbad4-46a4-4388-933e-1248932516e9")
 	)
 	(wire
 		(pts
@@ -6621,105 +6637,6 @@
 			(project "dcs_schematic_v2"
 				(path "/55696d69-b7bd-4583-a61a-1d9e9ca83b0d"
 					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R_Potentiometer_US")
-		(at 147.32 95.25 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "3fb3b47d-2de4-47b6-96a0-9fc5ed4ce49a")
-		(property "Reference" "RV2"
-			(at 149.86 93.98 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "10K"
-			(at 148.336 96.266 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Potentiometer, US symbol"
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "R"
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=+ 2=-"
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Params" "r=10K"
-			(at 147.32 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "df87779b-337b-4910-8649-fdec0d1f83d2")
-		)
-		(pin "2"
-			(uuid "b2e9878d-866f-4985-9ea5-215d1a82e9dc")
-		)
-		(pin "1"
-			(uuid "183e1c79-0c55-4e13-ab23-16873b7d9002")
-		)
-		(instances
-			(project "dcs_schematic_v2"
-				(path "/55696d69-b7bd-4583-a61a-1d9e9ca83b0d"
-					(reference "RV2")
 					(unit 1)
 				)
 			)
@@ -9049,6 +8966,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 134.62 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "adc4e562-575e-43e3-85c4-1043e7dbda8b")
+		(property "Reference" "R15"
+			(at 137.16 104.1399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "R_Small_US"
+			(at 137.16 106.6799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 134.62 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 134.62 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d3a3df91-29a6-4aa2-94e3-895f7ce964b5")
+		)
+		(pin "1"
+			(uuid "0a1c42e3-36d4-411d-bf42-4190eb0a45aa")
+		)
+		(instances
+			(project ""
+				(path "/55696d69-b7bd-4583-a61a-1d9e9ca83b0d"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:OPA2197xD")
 		(at 152.4 27.94 0)
 		(unit 3)
@@ -9512,6 +9499,72 @@
 			(project "dcs_schematic_v2"
 				(path "/55696d69-b7bd-4583-a61a-1d9e9ca83b0d"
 					(reference "R7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GNDREF")
+		(at 134.62 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d5135340-ec12-4ae4-9348-e22c5921f4f4")
+		(property "Reference" "#PWR022"
+			(at 134.62 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 134.62 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 134.62 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GNDREF\" , reference supply ground"
+			(at 134.62 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "72e8949c-6079-4890-a5f4-836a412a2996")
+		)
+		(instances
+			(project "dcs_schematic_v2"
+				(path "/55696d69-b7bd-4583-a61a-1d9e9ca83b0d"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
