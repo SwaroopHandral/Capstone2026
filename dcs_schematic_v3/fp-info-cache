@@ -1,4 +1,4 @@
-26727696456486257
+26729456342894005
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -6709,6 +6709,13 @@ CapstoneLibrary
 1N5817-D
 
 
+0
+2
+2
+CapstoneLibrary
+CDBW_Diode
+
+CDBW140-G 
 0
 2
 2

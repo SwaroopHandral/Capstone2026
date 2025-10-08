@@ -1,0 +1,557 @@
+Info: Processing symbol 'C2:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'C_FV1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'D1:1N5819G:DIOAD1036W78L470D235'.
+Info: Processing symbol 'C_Bypass_7:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'R_A_PU1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'C_Bypass_2:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'ENC_A_C1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'RA1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'C_I1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'C_Bypass_5:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'PS_DC2:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'Q1:Package_TO_SOT_THT:TO-220-3_Vertical'.
+Info: Processing symbol 'C_Tri1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'C2_M+1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'Proportional/Control1:OPA2197ID:SOIC127P599X175-8N'.
+Info: Processing symbol 'RB1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'Integrator1:OPA2197ID:SOIC127P599X175-8N'.
+Info: Processing symbol 'C_Bypass_3:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'ENC_B_R1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'C_Encoder1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'C_FV_OUT1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'RD1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'C_Bypass_6:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'ENC_B_C1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'J1:691137710002:691137710002'.
+Info: Processing symbol 'RC1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'C_Bypass_1:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'C_M+1:Capacitor_THT:CP_Radial_D10.0mm_P5.00mm'.
+Info: Processing symbol 'ENC_A_R1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'C_Bypass_4:Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder'.
+Info: Processing symbol 'J2:CapstoneLibrary:Term_1728307_PXC'.
+Info: Processing symbol 'PS_DC1:Capacitor_THT:CP_Radial_D10.0mm_P5.00mm'.
+Info: Processing symbol 'PWM_Gen1:OPA2197ID:SOIC127P599X175-8N'.
+Info: Processing symbol 'R_BLEED1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_B_PU1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_ENC_OUT1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_FP1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_Freq1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_FS1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_FV_OUT1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Total warnings: 2, errors: 11.
+Info: Processing symbol 'R_G1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_GS1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_H1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_H2:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_I1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_P1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_PU1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_SI1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'R_SP1:Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder'.
+Info: Processing symbol 'Setpoint/Error1:OPA2197ID:SOIC127P599X175-8N'.
+Info: Processing symbol 'SP_Cntl1:Potentiometer_THT:Potentiometer_Bourns_PTV09A-2_Single_Horizontal'.
+Info: Processing symbol 'to_motor1:691137710002:691137710002'.
+Info: Processing symbol 'U1:TLE2426CDR:SOIC127P599X175-8N'.
+Info: Processing symbol 'U2:LM311DR:SOIC127P599X175-8N'.
+Info: Processing symbol 'U3:M14A_TEX'.
+Info: Processing symbol 'U4:SOT108-1_NXP'.
+Added C_Bypass_1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_1.
+Changed C_Bypass_1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_1 symbol association from  to /0a893512-fe6a-4dc7-8336-93cad32872be.
+Updated C_Bypass_1 fields.
+Updated C_Bypass_1 sheetname to '/'.
+Updated C_Bypass_1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_1 footprint filters to 'C_*'.
+Connected C_Bypass_1 pin 2 to +12V.
+Connected C_Bypass_1 pin 1 to GND.
+Added C_Bypass_2 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_2.
+Changed C_Bypass_2 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_2 symbol association from  to /54a19c9a-925f-43e8-a520-81c067d91b3e.
+Updated C_Bypass_2 fields.
+Updated C_Bypass_2 sheetname to '/'.
+Updated C_Bypass_2 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_2 footprint filters to 'C_*'.
+Connected C_Bypass_2 pin 2 to +12V.
+Connected C_Bypass_2 pin 1 to GND.
+Added C_Bypass_3 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_3.
+Changed C_Bypass_3 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_3 symbol association from  to /0b84a47b-8da4-47f0-9860-4244aed7c5be.
+Updated C_Bypass_3 fields.
+Updated C_Bypass_3 sheetname to '/'.
+Updated C_Bypass_3 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_3 footprint filters to 'C_*'.
+Connected C_Bypass_3 pin 1 to GND.
+Connected C_Bypass_3 pin 2 to +12V.
+Added C_Bypass_4 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_4.
+Changed C_Bypass_4 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_4 symbol association from  to /61021954-48ec-4013-97ba-00bc36b0a9ee.
+Updated C_Bypass_4 fields.
+Updated C_Bypass_4 sheetname to '/'.
+Updated C_Bypass_4 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_4 footprint filters to 'C_*'.
+Connected C_Bypass_4 pin 2 to +12V.
+Added C_Bypass_5 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_5.
+Changed C_Bypass_5 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_5 symbol association from  to /4a24f80f-e64e-447d-8a90-447abd29c993.
+Updated C_Bypass_5 fields.
+Updated C_Bypass_5 sheetname to '/'.
+Updated C_Bypass_5 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_5 footprint filters to 'C_*'.
+Connected C_Bypass_5 pin 2 to +12V.
+Connected C_Bypass_5 pin 1 to GND.
+Added C_Bypass_6 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_6.
+Changed C_Bypass_6 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_6 symbol association from  to /799d47b2-e31c-40b1-b3f4-7ef713232e3c.
+Updated C_Bypass_6 fields.
+Updated C_Bypass_6 sheetname to '/'.
+Updated C_Bypass_6 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_6 footprint filters to 'C_*'.
+Connected C_Bypass_6 pin 2 to +12V.
+Connected C_Bypass_6 pin 1 to GND.
+Added C_Bypass_7 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Bypass_7.
+Changed C_Bypass_7 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Bypass_7 symbol association from  to /eb65e2c1-4e66-4a2d-8a5d-81029dfad61e.
+Updated C_Bypass_7 fields.
+Updated C_Bypass_7 sheetname to '/'.
+Updated C_Bypass_7 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Bypass_7 footprint filters to 'C_*'.
+Connected C_Bypass_7 pin 2 to +12V.
+Connected C_Bypass_7 pin 1 to GND.
+Added C_Encoder1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Encoder1.
+Changed C_Encoder1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated C_Encoder1 symbol association from  to /46a31475-4eb2-45d9-a30c-9f71284cb3bf.
+Updated C_Encoder1 fields.
+Updated C_Encoder1 sheetname to '/'.
+Updated C_Encoder1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Encoder1 footprint filters to 'C_*'.
+Connected C_Encoder1 pin 2 to GND.
+Connected C_Encoder1 pin 1 to +12V.
+Added C_FV1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_FV1.
+Changed C_FV1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 10n.
+Updated C_FV1 symbol association from  to /aa30db36-6005-41d9-b2bf-1f15feaa9c93.
+Updated C_FV1 fields.
+Updated C_FV1 sheetname to '/'.
+Updated C_FV1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_FV1 footprint filters to 'C_*'.
+Add net Net-(C_FV1-Pad1).
+Connected C_FV1 pin 1 to Net-(C_FV1-Pad1).
+Connected C_FV1 pin 2 to GND.
+Added C_FV_OUT1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_FV_OUT1.
+Changed C_FV_OUT1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 10u.
+Updated C_FV_OUT1 symbol association from  to /02552c0a-5822-4333-8d38-7dd27e70998a.
+Updated C_FV_OUT1 fields.
+Updated C_FV_OUT1 sheetname to '/'.
+Updated C_FV_OUT1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_FV_OUT1 footprint filters to 'C_*'.
+Add net /V_FEEDBACK.
+Connected C_FV_OUT1 pin 1 to /V_FEEDBACK.
+Connected C_FV_OUT1 pin 2 to GND.
+Connected C_Bypass_4 pin 1 to GND.
+Added C_I1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_I1.
+Changed C_I1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 1uF.
+Updated C_I1 symbol association from  to /b475e7a6-25b8-4ccd-81ee-f34b5319ca0f.
+Updated C_I1 fields.
+Updated C_I1 sheetname to '/'.
+Updated C_I1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_I1 footprint filters to 'C_*'.
+Add net /V_I.
+Connected C_I1 pin 1 to /V_I.
+Add net Net-(Integrator1--INA).
+Connected C_I1 pin 2 to Net-(Integrator1--INA).
+Added C_M+1 (footprint 'Capacitor_THT:CP_Radial_D10.0mm_P5.00mm').
+Changed REF** reference designator to C_M+1.
+Changed C_M+1 value from CP_Radial_D10.0mm_P5.00mm to 470u.
+Updated C_M+1 symbol association from  to /e5ae947f-f4e7-4078-8529-c7809f9f832f.
+Updated C_M+1 fields.
+Updated C_M+1 sheetname to '/'.
+Updated C_M+1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_M+1 footprint filters to 'C_*'.
+Connected C_M+1 pin 2 to GND.
+Connected C_M+1 pin 1 to +12V.
+Added C_Tri1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to C_Tri1.
+Changed C_Tri1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 1nF.
+Updated C_Tri1 symbol association from  to /bc6671bf-6813-44c9-ab63-863d60563ee1.
+Updated C_Tri1 fields.
+Updated C_Tri1 sheetname to '/'.
+Updated C_Tri1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated C_Tri1 footprint filters to 'C_*'.
+Add net Net-(PWM_Gen1--INB).
+Connected C_Tri1 pin 1 to Net-(PWM_Gen1--INB).
+Add net /V_TRI.
+Connected C_Tri1 pin 2 to /V_TRI.
+Added ENC_A_C1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to ENC_A_C1.
+Changed ENC_A_C1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 1nF.
+Updated ENC_A_C1 symbol association from  to /5eb584f6-e3b0-49f6-8f0f-a1afa07812df.
+Updated ENC_A_C1 fields.
+Updated ENC_A_C1 sheetname to '/'.
+Updated ENC_A_C1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated ENC_A_C1 footprint filters to 'C_*'.
+Connected ENC_A_C1 pin 2 to GND.
+Add net /ENC_A.
+Connected ENC_A_C1 pin 1 to /ENC_A.
+Added ENC_A_R1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to ENC_A_R1.
+Changed ENC_A_R1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 100.
+Updated ENC_A_R1 symbol association from  to /86132436-b66b-4e53-a6e2-aa49311fd1a6.
+Updated ENC_A_R1 fields.
+Updated ENC_A_R1 sheetname to '/'.
+Updated ENC_A_R1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated ENC_A_R1 footprint filters to 'R_*'.
+Connected ENC_A_R1 pin 2 to /ENC_A.
+Add net Net-(U4-I1).
+Connected ENC_A_R1 pin 1 to Net-(U4-I1).
+Added ENC_B_C1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to ENC_B_C1.
+Changed ENC_B_C1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 1nF.
+Updated ENC_B_C1 symbol association from  to /c67322f6-92ac-40d7-a90a-8942e3413901.
+Updated ENC_B_C1 fields.
+Updated ENC_B_C1 sheetname to '/'.
+Updated ENC_B_C1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated ENC_B_C1 footprint filters to 'C_*'.
+Add net /ENC_B.
+Connected ENC_B_C1 pin 1 to /ENC_B.
+Connected ENC_B_C1 pin 2 to GND.
+Added ENC_B_R1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to ENC_B_R1.
+Changed ENC_B_R1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 100.
+Updated ENC_B_R1 symbol association from  to /a0ed6b10-0928-46ce-b999-e63e933bd11a.
+Updated ENC_B_R1 fields.
+Updated ENC_B_R1 sheetname to '/'.
+Updated ENC_B_R1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated ENC_B_R1 footprint filters to 'R_*'.
+Add net Net-(U4-I2).
+Connected ENC_B_R1 pin 1 to Net-(U4-I2).
+Connected ENC_B_R1 pin 2 to /ENC_B.
+Added J2 (footprint 'CapstoneLibrary:Term_1728307_PXC').
+Changed REF** reference designator to J2.
+Changed J2 value from TERM_1728307_PXC to 1728307.
+Updated J2 symbol association from  to /c43961d0-c049-4587-96c9-f75a7b5118b7.
+Updated J2 fields.
+Updated J2 sheetname to '/'.
+Updated J2 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated J2 footprint filters to 'CONN_1728307_PXC'.
+Connected J2 pin 4 to /ENC_B.
+Connected J2 pin 2 to GND.
+Connected J2 pin 1 to +12V.
+Connected J2 pin 3 to /ENC_A.
+Added PS_DC1 (footprint 'Capacitor_THT:CP_Radial_D10.0mm_P5.00mm').
+Changed REF** reference designator to PS_DC1.
+Changed PS_DC1 value from CP_Radial_D10.0mm_P5.00mm to 470u.
+Updated PS_DC1 symbol association from  to /3d8e2796-7fca-4f33-b91f-1fcd536a9614.
+Updated PS_DC1 fields.
+Updated PS_DC1 sheetname to '/'.
+Updated PS_DC1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated PS_DC1 footprint filters to 'C_*'.
+Connected PS_DC1 pin 2 to GND.
+Connected PS_DC1 pin 1 to +12V.
+Added PS_DC2 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Changed REF** reference designator to PS_DC2.
+Changed PS_DC2 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Updated PS_DC2 symbol association from  to /d250ed15-0ebc-4048-b91e-e09b50335633.
+Updated PS_DC2 fields.
+Updated PS_DC2 sheetname to '/'.
+Updated PS_DC2 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated PS_DC2 footprint filters to 'C_*'.
+Connected PS_DC2 pin 1 to GND.
+Connected PS_DC2 pin 2 to +12V.
+Added Q1 (footprint 'Package_TO_SOT_THT:TO-220-3_Vertical').
+Changed REF** reference designator to Q1.
+Changed Q1 value from TO-220-3_Vertical to IRLZ44N.
+Updated Q1 symbol association from  to /f6b79887-86b8-4fc1-8635-bceb2dd5856a.
+Updated Q1 fields.
+Updated Q1 sheetname to '/'.
+Updated Q1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated Q1 footprint filters to 'TO?220*'.
+Add net /M-.
+Connected Q1 pin 2 to /M-.
+Connected Q1 pin 3 to GND.
+Add net Net-(Q1-G).
+Connected Q1 pin 1 to Net-(Q1-G).
+Added RA1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to RA1.
+Changed RA1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated RA1 symbol association from  to /32977a9a-0725-4c59-984f-95f86eb5ecd7.
+Updated RA1 fields.
+Updated RA1 sheetname to '/'.
+Updated RA1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated RA1 footprint filters to 'R_*'.
+Connected RA1 pin 1 to /V_FEEDBACK.
+Connected RA1 pin 2 to Net-(Setpoint/Error1--INB).
+Added RB1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to RB1.
+Changed RB1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated RB1 symbol association from  to /24ae21da-b996-42f6-963d-df4f8058350f.
+Updated RB1 fields.
+Updated RB1 sheetname to '/'.
+Updated RB1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated RB1 footprint filters to 'R_*'.
+Connected RB1 pin 1 to /V_ERROR.
+Connected RB1 pin 2 to Net-(Setpoint/Error1--INB).
+Added RC1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to RC1.
+Changed RC1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated RC1 symbol association from  to /23304bc4-e34f-4da8-a450-732c3bad20a3.
+Updated RC1 fields.
+Updated RC1 sheetname to '/'.
+Updated RC1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated RC1 footprint filters to 'R_*'.
+Add net Net-(Setpoint/Error1-+INB).
+Connected RC1 pin 2 to Net-(Setpoint/Error1-+INB).
+Add net /V_SET_BUF.
+Connected RC1 pin 1 to /V_SET_BUF.
+Added RD1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to RD1.
+Changed RD1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated RD1 symbol association from  to /3127f507-288f-40f1-902c-563cd47b0b91.
+Updated RD1 fields.
+Updated RD1 sheetname to '/'.
+Updated RD1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated RD1 footprint filters to 'R_*'.
+Add net /V_REF.
+Connected RD1 pin 1 to /V_REF.
+Connected RD1 pin 2 to Net-(Setpoint/Error1-+INB).
+Added R_A_PU1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_A_PU1.
+Changed R_A_PU1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_A_PU1 symbol association from  to /d6fe4604-c2f7-43ab-b46e-2f3218989966.
+Updated R_A_PU1 fields.
+Updated R_A_PU1 sheetname to '/'.
+Updated R_A_PU1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_A_PU1 footprint filters to 'R_*'.
+Connected R_A_PU1 pin 1 to /ENC_A.
+Connected R_A_PU1 pin 2 to +12V.
+Added C2 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Added R_BLEED1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_BLEED1.
+Changed R_BLEED1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 1M.
+Updated R_BLEED1 symbol association from  to /52a386af-f1ff-4034-b15c-9931fda2d7e7.
+Updated R_BLEED1 fields.
+Updated R_BLEED1 sheetname to '/'.
+Updated R_BLEED1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_BLEED1 footprint filters to 'R_*'.
+Connected R_BLEED1 pin 1 to Net-(Integrator1--INA).
+Connected R_BLEED1 pin 2 to /V_I.
+Changed REF** reference designator to C2.
+Added R_B_PU1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_B_PU1.
+Changed R_B_PU1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_B_PU1 symbol association from  to /189484d2-9450-4a0b-a1d0-cf1943491381.
+Updated R_B_PU1 fields.
+Updated R_B_PU1 sheetname to '/'.
+Updated R_B_PU1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_B_PU1 footprint filters to 'R_*'.
+Connected R_B_PU1 pin 2 to +12V.
+Connected R_B_PU1 pin 1 to /ENC_B.
+Changed C2 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 1pF.
+Added R_ENC_OUT1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_ENC_OUT1.
+Changed R_ENC_OUT1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_ENC_OUT1 symbol association from  to /9d92453c-5378-4204-ab46-9910aca75c51.
+Updated R_ENC_OUT1 fields.
+Updated R_ENC_OUT1 sheetname to '/'.
+Updated R_ENC_OUT1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_ENC_OUT1 footprint filters to 'R_*'.
+Add net /ENC_OUT.
+Connected R_ENC_OUT1 pin 2 to /ENC_OUT.
+Add net Net-(U3-TACH+).
+Connected R_ENC_OUT1 pin 1 to Net-(U3-TACH+).
+Updated C2 symbol association from  to /72cb51c3-ffa2-466a-80c5-497dda79bb26.
+Added R_FP1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_FP1.
+Changed R_FP1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_FP1 symbol association from  to /916821ed-de3f-4596-aa59-b1e74afa5121.
+Updated R_FP1 fields.
+Updated R_FP1 sheetname to '/'.
+Updated R_FP1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_FP1 footprint filters to 'R_*'.
+Add net Net-(Proportional/Control1--INA).
+Connected R_FP1 pin 1 to Net-(Proportional/Control1--INA).
+Add net /V_CONTROL.
+Connected R_FP1 pin 2 to /V_CONTROL.
+Updated C2 fields.
+Added R_Freq1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_Freq1.
+Changed R_Freq1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_Freq1 symbol association from  to /5039a570-6212-4666-b22f-6ac4706db79f.
+Updated R_Freq1 fields.
+Updated R_Freq1 sheetname to '/'.
+Updated R_Freq1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_Freq1 footprint filters to 'R_*'.
+Connected R_Freq1 pin 2 to Net-(PWM_Gen1--INB).
+Add net /V_SQ.
+Connected R_Freq1 pin 1 to /V_SQ.
+Updated C2 sheetname to '/'.
+Added R_FS1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_FS1.
+Changed R_FS1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_FS1 symbol association from  to /087a36be-80a3-434e-b5af-3f6b26d80716.
+Updated R_FS1 fields.
+Updated R_FS1 sheetname to '/'.
+Updated R_FS1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_FS1 footprint filters to 'R_*'.
+Connected R_FS1 pin 2 to /V_CONTROL.
+Add net Net-(Proportional/Control1--INB).
+Connected R_FS1 pin 1 to Net-(Proportional/Control1--INB).
+Updated C2 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Added R_FV_OUT1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_FV_OUT1.
+Updated C2 footprint filters to 'C_*'.
+Updated R_FV_OUT1 symbol association from  to /299e53bb-253a-49b7-bc68-66bd6a437b86.
+Updated R_FV_OUT1 fields.
+Updated R_FV_OUT1 sheetname to '/'.
+Updated R_FV_OUT1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_FV_OUT1 footprint filters to 'R_*'.
+Connected R_FV_OUT1 pin 2 to /V_FEEDBACK.
+Connected R_FV_OUT1 pin 1 to GND.
+Add net Net-(Setpoint/Error1--INB).
+Added R_G1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_G1.
+Changed R_G1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 20.
+Updated R_G1 symbol association from  to /a7ed1594-9b09-40b8-ad5b-5679304cd715.
+Updated R_G1 fields.
+Updated R_G1 sheetname to '/'.
+Updated R_G1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_G1 footprint filters to 'R_*'.
+Connected R_G1 pin 1 to Net-(Q1-G).
+Add net /PWM.
+Connected R_G1 pin 2 to /PWM.
+Connected C2 pin 2 to Net-(Setpoint/Error1--INB).
+Added R_GS1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_GS1.
+Changed R_GS1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 100k.
+Updated R_GS1 symbol association from  to /d10a29a2-1e83-4b22-8d05-0ab8390789d9.
+Updated R_GS1 fields.
+Updated R_GS1 sheetname to '/'.
+Updated R_GS1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_GS1 footprint filters to 'R_*'.
+Connected R_GS1 pin 2 to Net-(Q1-G).
+Connected R_GS1 pin 1 to GND.
+Add net /V_ERROR.
+Added R_H1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_H1.
+Changed R_H1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 100k.
+Updated R_H1 symbol association from  to /b1693b13-c497-45c7-847b-782ea3c8912c.
+Updated R_H1 fields.
+Updated R_H1 sheetname to '/'.
+Updated R_H1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_H1 footprint filters to 'R_*'.
+Connected R_H1 pin 2 to /V_SQ.
+Add net /V_TH.
+Connected R_H1 pin 1 to /V_TH.
+Connected C2 pin 1 to /V_ERROR.
+Added R_H2 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_H2.
+Changed R_H2 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 100k.
+Updated R_H2 symbol association from  to /eca9ff51-11c2-4f51-bdeb-34cce8e531ef.
+Updated R_H2 fields.
+Updated R_H2 sheetname to '/'.
+Updated R_H2 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_H2 footprint filters to 'R_*'.
+Connected R_H2 pin 2 to /V_REF.
+Connected R_H2 pin 1 to /V_TH.
+Added C2_M+1 (footprint 'Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder').
+Added R_I1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_I1.
+Changed R_I1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_I1 symbol association from  to /6cee68a7-8f69-46db-aa5b-5bbd42775b8e.
+Updated R_I1 fields.
+Updated R_I1 sheetname to '/'.
+Updated R_I1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_I1 footprint filters to 'R_*'.
+Connected R_I1 pin 1 to Net-(Integrator1--INA).
+Connected R_I1 pin 2 to /V_ERROR.
+Changed REF** reference designator to C2_M+1.
+Added R_P1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_P1.
+Changed R_P1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Changed R_FV_OUT1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 43k.
+Updated R_P1 fields.
+Updated R_P1 sheetname to '/'.
+Updated R_P1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_P1 footprint filters to 'R_*'.
+Connected R_P1 pin 2 to Net-(Proportional/Control1--INA).
+Connected R_P1 pin 1 to /V_ERROR.
+Changed C2_M+1 value from C_0603_1608Metric_Pad1.08x0.95mm_HandSolder to 0.1uF.
+Added R_PU1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_PU1.
+Changed R_PU1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 4.7k.
+Updated R_PU1 symbol association from  to /e52dfe28-09c4-4794-b902-351c1d249ab5.
+Updated R_PU1 fields.
+Updated R_PU1 sheetname to '/'.
+Updated R_PU1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_PU1 footprint filters to 'R_*'.
+Connected R_PU1 pin 2 to +12V.
+Connected R_PU1 pin 1 to /PWM.
+Updated C2_M+1 symbol association from  to /8e7ebfdb-f140-4e09-b644-ded6f84d62b3.
+Added R_SI1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_SI1.
+Changed R_SI1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_SI1 symbol association from  to /31d1eab9-d247-4b18-b3b8-4ae82ccd2e15.
+Updated R_SI1 fields.
+Updated R_SI1 sheetname to '/'.
+Updated R_SI1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_SI1 footprint filters to 'R_*'.
+Connected R_SI1 pin 1 to Net-(Proportional/Control1--INB).
+Connected R_SI1 pin 2 to /V_I.
+Updated C2_M+1 fields.
+Added R_SP1 (footprint 'Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder').
+Changed REF** reference designator to R_SP1.
+Changed R_SP1 value from R_0603_1608Metric_Pad0.98x0.95mm_HandSolder to 10k.
+Updated R_SP1 symbol association from  to /7bf57305-23c9-49d4-8980-ca58433bad36.
+Updated R_SP1 fields.
+Updated R_SP1 sheetname to '/'.
+Updated R_SP1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated R_SP1 footprint filters to 'R_*'.
+Connected R_SP1 pin 2 to /V_CONTROL.
+Connected R_SP1 pin 1 to Net-(Proportional/Control1--INB).
+Updated C2_M+1 sheetname to '/'.
+Updated C2_M+1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Added SP_Cntl1 (footprint 'Potentiometer_THT:Potentiometer_Bourns_PTV09A-2_Single_Horizontal').
+Changed REF** reference designator to SP_Cntl1.
+Changed SP_Cntl1 value from Potentiometer_Bourns_PTV09A-2_Single_Horizontal to 10k.
+Updated SP_Cntl1 symbol association from  to /fbb94c23-7a36-44ae-9f40-c58879edf9c8.
+Updated SP_Cntl1 fields.
+Updated SP_Cntl1 sheetname to '/'.
+Updated SP_Cntl1 sheetfile to 'dcs_schematic_v3.kicad_sch'.
+Updated SP_Cntl1 footprint filters to 'Potentiometer*'.
+Connected SP_Cntl1 pin 1 to GND.
+Add net /V_SET.
+Connected SP_Cntl1 pin 2 to /V_SET.
+Connected SP_Cntl1 pin 3 to +12V.
+Updated C2_M+1 footprint filters to 'C_*'.
+Add net GND.
+Connected C2_M+1 pin 1 to GND.
+Add net +12V.
+Connected C2_M+1 pin 2 to +12V.
+
+
+Updated R_P1 symbol association from  to /5b7bced6-43ee-4e71-810d-881d157b6dce.
+Warning: No net found for component SP_Cntl1 pad MP (no pin MP in symbol).
+Warning: No net found for component SP_Cntl1 pad MP (no pin MP in symbol).
+Error: Cannot add PWM_Gen1 (footprint 'OPA2197ID:SOIC127P599X175-8N' not found).
+Error: Cannot add to_motor1 (footprint '691137710002:691137710002' not found).
+Error: Cannot add Proportional/Control1 (footprint 'OPA2197ID:SOIC127P599X175-8N' not found).
+Error: Cannot add U1 (footprint 'TLE2426CDR:SOIC127P599X175-8N' not found).
+Error: Cannot add U2 (footprint 'LM311DR:SOIC127P599X175-8N' not found).
+Error: Cannot add J1 (footprint '691137710002:691137710002' not found).
+Error: Cannot add U3 (footprint 'M14A_TEX' not found).
+Error: Cannot add U4 (footprint 'SOT108-1_NXP' not found).
+Error: Cannot add D1 (footprint '1N5819G:DIOAD1036W78L470D235' not found).
+Error: Cannot add Setpoint/Error1 (footprint 'OPA2197ID:SOIC127P599X175-8N' not found).
+Error: Cannot add Integrator1 (footprint 'OPA2197ID:SOIC127P599X175-8N' not found).
+
+
+Info: Total warnings: 2, errors: 11.
