@@ -7,8 +7,8 @@ Shape Version=11.00
 Screen=1536,960
 MCAPVersion=12.2.0.3
 Key ID=Demo
-NLCnt=136
-TXCnt=29
+NLCnt=138
+TXCnt=30
 
 [shapedef]
 Name=Battery
@@ -107,7 +107,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=312
+Used=313
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -1075,8 +1075,24 @@ Style=8192
 ON=0,0,PACKAGE
 V
 
+[Comp]
+Name=Ground
+Px=1616,880
+Rot=7
+
+[Wire]
+Pxs=1608,880,1616,880
+
 [Grid Text]
-Text="reference input for testing"
+Text="need to build fake encoder output for pwm testing"
+Px=1032,280
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="reference from f to v chip input for testing"
 Px=568,344
 GridSnap=True
 JustifyH=Left
@@ -1510,7 +1526,7 @@ Scale 1=1
 Scale 2=1
 SB 3=338,130
 Scale 3=1.3333333333333333
-Px=1041,381
+Px=1337,489
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
