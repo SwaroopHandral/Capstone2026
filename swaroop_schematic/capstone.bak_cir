@@ -4,11 +4,26 @@ Version=12.00
 Program=Micro-Cap
 Component Version=10.00
 Shape Version=11.00
-Screen=1536,960
+Screen=1920,1080
 MCAPVersion=12.2.0.3
 Key ID=Demo
-NLCnt=138
-TXCnt=30
+NLCnt=172
+TXCnt=39
+
+[shapedef]
+Name=100
+Block=0,8,56,88,0,10
+BlockLine="Line",-16,16
+BlockLine="Line",-16,32
+BlockLine="Line",-16,48
+BlockLine="Line",-16,64
+BlockLine="Line",-16,80
+BlockLine="Line",72,16
+BlockLine="Line",72,32
+BlockLine="Line",72,48
+BlockLine="Line",72,64
+BlockLine="None",72,80
+FColor=None
 
 [shapedef]
 Name=Battery
@@ -37,6 +52,28 @@ Line=24,40,56,40
 Root="Opamp.root",-16,-8,0
 
 [shapedef]
+Name=DC Motor
+Rectangle=-8,46,8,50
+FColor=None
+Rectangle=-8,14,8,18
+FColor=None
+Line=0,0,0,14
+Line=0,64,0,50
+Arc=-16,16,16,48 , -9,16,-9,48
+Arc=-16,16,16,48 , 9,48,9,16
+Text="M"
+TextInfo=-6,24,6,40 , -14,4,"Arial"
+Ellipse=38,14,42,18
+FColor=None
+Line=24,16,38,16
+Ellipse=38,30,42,34
+FColor=None
+Line=24,32,38,32
+Ellipse=38,46,42,50
+FColor=None
+Line=24,48,38,48
+
+[shapedef]
 Name=Ground
 Line=0,0,12,0
 Line=12,-8,12,8
@@ -46,6 +83,33 @@ Line=24,0,24,0
 [shapedef]
 Name=Minus.root
 Line=-2,0,2,0
+
+[shapedef]
+Name=Mos1.root
+Line=0,0,10,0
+Line=10,-8,10,8
+Rectangle=12,-12,14,12
+Current=32,-24,32,-16
+Current=32,24,32,16
+Current=0,-8,8,-8
+PolyOpen=3
+PolyLine=24,-24
+PolyLine=24,-8
+PolyLine=13,-8
+PolyOpen=3
+PolyLine=24,24
+PolyLine=24,8
+PolyLine=13,8
+
+[shapedef]
+Name=NMOS
+Root="Mos1.root",0,0,0
+Line=14,0,24,0
+PolyClosed=3
+PolyLine=16,0
+PolyLine=20,4
+PolyLine=20,-4
+Current=32,-4,24,-4
 
 [shapedef]
 Name=Opamp5
@@ -95,7 +159,7 @@ Name=Battery
 Definition=Battery
 Shape=Battery
 Mask=7937
-Used=78
+Used=51
 memo=Battery
 Label Offset=19,7,10,13
 PinCnt=2
@@ -107,7 +171,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=313
+Used=257
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -117,8 +181,8 @@ Pin="PinA",0,0,-3,-7
 Name=Opamp
 Definition=Opamp
 Shape=Opamp5
-Mask=4097
-Used=22
+Mask=5121
+Used=3
 memo=Opamp
 Label Offset=44,29,-14,39
 PinCnt=5
@@ -133,7 +197,7 @@ Name=Resistor
 Definition=Resistor
 Shape=Resistor
 Mask=6913
-Used=216
+Used=148
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -145,7 +209,7 @@ Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
 Mask=7425
-Used=49
+Used=22
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -157,7 +221,6 @@ Name=LM311_TI
 Definition=Subckt
 Shape=Comp6
 Mask=4224
-Used=1
 memo=Differential Comparator with Strobe
 Label Offset=33,-15,-2,24
 PinCnt=6
@@ -167,6 +230,52 @@ Pin="3",a,2,-2,7,8
 Pin="4",a,2,6,7,5
 Pin="5",a,7,2,-3,-3
 Pin="6",a,7,5,-3,-3
+
+[compdef]
+Name=NMOS
+Definition=NMOS
+Shape=NMOS
+Mask=5376
+memo=NMOS
+Label Offset=29,1,7,25
+PinCnt=4
+Pin="Drain",3,-3,8,9
+Pin="Gate",0,0,-20,-4
+Pin="Source",3,3,8,4
+Pin="Body",3,0,8,-1
+
+[compdef]
+Name=DC_Motor
+Definition=Macro
+Shape=DC Motor
+Mask=4096
+Used=3
+memo=DC Motor macro
+Link=http://www.spectrum-soft.com/news/fall2007/dcmotor.shtm
+Label Offset=16,66,5,10
+PinCnt=5
+Pin="Inp",a,0,0
+Pin="Inn",a,0,8
+Pin="Velocity",a,5,2,1,-2
+Pin="BEMF",a,5,4
+Pin="Torque",a,5,6
+
+[compdef]
+Name=LM2917-8
+Definition=Subckt
+Shape=100
+Mask=14468
+Used=2
+Label Offset=0,0,0,0
+PinCnt=8
+Pin="I1",a,-2,2
+Pin="I2",a,-2,4
+Pin="I3",a,-2,6
+Pin="I4",a,-2,8
+Pin="I5",a,-2,10
+Pin="I6",a,9,2
+Pin="I7",a,9,4
+Pin="I8",a,9,6
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,1123,515
@@ -182,7 +291,7 @@ PathDelayFormat=3
 WarningFormat=3
 GridTextFormulaFormat=3
 Window Placement in AC Analysis=2,3, -1,-1, -8,-31, 130,130,1423,619
-Window Placement in DC Analysis=2,3, -1,-1, -8,-31, 26,26,1123,515
+Window Placement in DC Analysis=2,3, 0,701, -8,-31, 26,26,1123,515
 SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
@@ -243,7 +352,7 @@ Page=3
 
 [Comp]
 Name=Opamp
-Px=624,576
+Px=736,408
 Rot=4
 
 [Attr]
@@ -261,7 +370,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=560,560
+Px=672,392
 Rot=3
 
 [Attr]
@@ -280,7 +389,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=560,640
+Px=672,472
 Rot=3
 
 [Attr]
@@ -298,40 +407,40 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=560,560,560,576
+Pxs=672,392,672,408
 
 [Wire]
-Pxs=560,576,624,576
+Pxs=672,408,736,408
 
 [Wire]
-Pxs=560,576,560,592
+Pxs=672,408,672,424
 
 [Wire]
-Pxs=616,528,624,528
+Pxs=728,360,736,360
 
 [Wire]
-Pxs=616,504,616,528
+Pxs=728,336,728,360
 
 [Wire]
-Pxs=616,504,720,504
+Pxs=728,336,832,336
 
 [Wire]
-Pxs=720,504,720,552
+Pxs=832,336,832,384
 
 [Wire]
-Pxs=696,552,720,552
+Pxs=808,384,832,384
 
 [Wire]
-Pxs=560,640,560,648
+Pxs=672,472,672,480
 
 [Comp]
 Name=Ground
-Px=560,656
+Px=672,488
 Rot=7
 
 [Comp]
 Name=Opamp
-Px=872,552
+Px=984,384
 Rot=4
 
 [Attr]
@@ -348,32 +457,29 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=720,552,784,552
+Pxs=832,384,896,384
 
 [Wire]
-Pxs=520,368,560,368
+Pxs=1016,392,1016,400
 
 [Wire]
-Pxs=904,560,904,568
+Pxs=1016,320,1016,328
 
 [Wire]
-Pxs=904,488,904,496
+Pxs=768,344,768,352
 
 [Wire]
-Pxs=656,512,656,520
+Pxs=768,416,768,424
 
 [Wire]
-Pxs=656,584,656,592
+Pxs=672,336,672,344
 
 [Wire]
-Pxs=560,504,560,512
-
-[Wire]
-Pxs=944,528,952,528
+Pxs=1056,360,1064,360
 
 [Comp]
 Name=Battery
-Px=432,648
+Px=544,480
 Rot=5
 
 [Attr]
@@ -391,20 +497,20 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=432,504,560,504
+Pxs=544,336,672,336
 
 [Wire]
-Pxs=432,504,432,600
+Pxs=544,336,544,432
 
 [Wire]
-Pxs=432,648,560,648
+Pxs=544,480,672,480
 
 [Wire]
-Pxs=560,648,560,656
+Pxs=672,480,672,488
 
 [Comp]
 Name=Resistor
-Px=808,504
+Px=920,336
 Rot=4
 
 [Attr]
@@ -422,14 +528,14 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=856,504,864,504
+Pxs=968,336,976,336
 
 [Wire]
-Pxs=784,504,808,504
+Pxs=896,336,920,336
 
 [Comp]
 Name=Resistor
-Px=888,464
+Px=1000,296
 Rot=4
 
 [Attr]
@@ -447,23 +553,23 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=864,504,872,504
+Pxs=976,336,984,336
 
 [Wire]
-Pxs=864,464,864,504
+Pxs=976,296,976,336
 
 [Wire]
-Pxs=864,464,888,464
+Pxs=976,296,1000,296
 
 [Wire]
-Pxs=936,464,952,464
+Pxs=1048,296,1064,296
 
 [Wire]
-Pxs=952,464,952,528
+Pxs=1064,296,1064,360
 
 [Comp]
 Name=Resistor
-Px=784,552
+Px=896,384
 Rot=4
 
 [Attr]
@@ -482,7 +588,7 @@ V
 
 [Comp]
 Name=Resistor
-Px=848,624
+Px=960,456
 Rot=3
 
 [Attr]
@@ -500,22 +606,22 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=832,552,848,552
+Pxs=944,384,960,384
 
 [Wire]
-Pxs=848,552,848,576
+Pxs=960,384,960,408
 
 [Wire]
-Pxs=848,552,872,552
+Pxs=960,384,984,384
 
 [Comp]
 Name=Ground
-Px=848,640
+Px=960,472
 Rot=7
 
 [Comp]
 Name=Opamp
-Px=624,432
+Px=736,264
 Rot=4
 
 [Attr]
@@ -532,64 +638,37 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-Pxs=560,432,624,432
+Pxs=672,264,736,264
 
 [Wire]
-Pxs=616,384,624,384
+Pxs=728,216,736,216
 
 [Wire]
-Pxs=616,360,616,384
+Pxs=728,192,728,216
 
 [Wire]
-Pxs=616,360,720,360
+Pxs=728,192,832,192
 
 [Wire]
-Pxs=720,360,720,408
+Pxs=832,192,832,240
 
 [Wire]
-Pxs=696,408,720,408
+Pxs=808,240,832,240
 
 [Wire]
-Pxs=720,408,784,408
+Pxs=832,240,896,240
 
 [Wire]
-Pxs=656,368,656,376
+Pxs=768,200,768,208
 
 [Wire]
-Pxs=656,440,656,448
-
-[Comp]
-Name=Battery
-Px=520,416
-Rot=5
-
-[Attr]
-ON=13,-33,PART
-V=V3
-Style=8192
-
-[Attr]
-ON=18,-18,VALUE
-V=5
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
-
-[Comp]
-Name=Ground
-Px=520,416
-Rot=7
+Pxs=768,272,768,280
 
 [Wire]
-Pxs=560,368,560,432
+Pxs=896,240,896,336
 
 [Wire]
-Pxs=784,408,784,504
-
-[Wire]
-Pxs=848,624,848,640
+Pxs=960,456,960,472
 
 [Comp]
 Name=Resistor
@@ -1083,17 +1162,267 @@ Rot=7
 [Wire]
 Pxs=1608,880,1616,880
 
-[Grid Text]
-Text="need to build fake encoder output for pwm testing"
-Px=1032,280
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
+[Comp]
+Name=Resistor
+Px=1656,832
+Rot=3
+
+[Attr]
+ON=-32,-25,PART
+V=R15
+Style=8192
+
+[Attr]
+ON=-35,-39,RESISTANCE
+V=4.7k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1608,856,1656,856
+
+[Wire]
+Pxs=1656,856,1736,856
+
+[Comp]
+Name=NMOS
+Px=1768,856
+Rot=4
+
+[Attr]
+ON=20,7,PART
+V=M1
+Style=8192
+
+[Attr]
+ON=7,39,MODEL
+V=IRLZ44N
+
+[Attr]
+ON=7,67,PACKAGE
+V=TO-220AB
+
+[Comp]
+Name=Resistor
+Px=1744,888
+Rot=4
+
+[Attr]
+ON=2,9,PART
+V=R16
+Style=8192
+
+[Attr]
+ON=10,20,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1792,880,1792,888
+
+[Wire]
+Pxs=1736,856,1736,888
+
+[Wire]
+Pxs=1736,888,1744,888
+
+[Wire]
+Pxs=1736,856,1768,856
+
+[Wire]
+Pxs=1792,824,1792,832
+
+[Wire]
+Pxs=1656,776,1656,784
+
+[Wire]
+Pxs=1656,832,1656,856
+
+[Comp]
+Name=Resistor
+Px=1792,824
+Rot=3
+
+[Attr]
+ON=-32,-33,PART
+V=RL
+Style=8192
+
+[Attr]
+ON=-35,-39,RESISTANCE
+V=100
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1792,744,1792,776
+
+[Wire]
+Pxs=1048,528,1048,632
+
+[Wire]
+Pxs=1048,832,1056,832
+
+[Wire]
+Pxs=1048,632,1056,632
+
+[Wire]
+Pxs=1048,632,1048,832
+
+[Comp]
+Name=Ground
+Px=1792,888
+Rot=7
+
+[Comp]
+Name=DC_Motor
+Style=ShowPinText
+ShowPinMarkers=True
+Px=1848,680
+
+[Attr]
+ON=16,66,PART
+V=X10
+Style=8192
+
+[Attr]
+ON=16,80,FILE
+V=DC_Motor
+
+[Attr]
+ON=16,108,Param:LA
+V=1.5M
+
+[Attr]
+ON=16,122,Param:RA
+V=.5
+
+[Attr]
+ON=16,136,Param:KE
+V=.05
+
+[Attr]
+ON=16,150,Param:KT
+V=.05
+
+[Attr]
+ON=16,164,Param:JM
+V=250U
+
+[Attr]
+ON=16,178,Param:BM
+V=.1M
+
+[Attr]
+ON=16,192,Param:TL
+V=0
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1568,888,1568,896
+
+[Wire]
+Pxs=1568,816,1568,824
+
+[Wire]
+Pxs=1776,672,1848,672
+
+[Wire]
+Pxs=1848,672,1848,680
+
+[Wire]
+Pxs=1792,744,1848,744
+
+[Comp]
+Name=Battery
+Px=1776,728
+Rot=5
+
+[Attr]
+ON=10,-27,PART
+V=V5
+Style=8192
+
+[Attr]
+ON=10,-41,VALUE
+V=12
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1776,672,1776,680
+
+[Comp]
+Name=Ground
+Px=1776,728
+Rot=7
+
+[Wire]
+Pxs=672,232,672,264
+
+[Comp]
+Name=LM2917-8
+Style=ShowPinText
+ShowPackagePins=True
+Px=424,176
+
+[Attr]
+ON=7,-12,PART
+V=X11
+Style=8192
+
+[Attr]
+ON=-2,-27,NAME
+V=LM2917-8
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=376,192,408,192
+
+[Wire]
+Pxs=376,208,408,208
+
+[Wire]
+Pxs=376,224,408,224
+
+[Wire]
+Pxs=376,240,408,240
+
+[Wire]
+Pxs=376,256,408,256
+
+[Wire]
+Pxs=496,192,528,192
+
+[Wire]
+Pxs=496,208,528,208
+
+[Wire]
+Pxs=496,224,528,224
 
 [Grid Text]
 Text="reference from f to v chip input for testing"
-Px=568,344
+Px=680,176
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1118,32 +1447,8 @@ Page=3
 CBorder=None
 
 [Grid Text]
-Text="out"
-Px=80,80
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="out"
-Px=80,80
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
 Text="VE"
-Px=80,80
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="VE"
-Px=904,496
+Px=1016,328
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1151,7 +1456,7 @@ CBorder=None
 
 [Grid Text]
 Text="VC"
-Px=904,568
+Px=1016,400
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1159,7 +1464,7 @@ CBorder=None
 
 [Grid Text]
 Text="VE"
-Px=656,520
+Px=768,352
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1167,7 +1472,7 @@ CBorder=None
 
 [Grid Text]
 Text="VC"
-Px=656,592
+Px=768,424
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1175,7 +1480,7 @@ CBorder=None
 
 [Grid Text]
 Text="VOUT"
-Px=952,528
+Px=1064,360
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1183,7 +1488,7 @@ CBorder=None
 
 [Grid Text]
 Text="VE1"
-Px=656,376
+Px=768,208
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1191,7 +1496,7 @@ CBorder=None
 
 [Grid Text]
 Text="VC1"
-Px=656,448
+Px=768,280
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1328,6 +1633,110 @@ JustifyH=Left
 JustifyV=Bottom
 CBorder=None
 
+[Grid Text]
+Text="VE"
+Px=1656,776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=1792,776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=1568,824
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="VC"
+Px=1568,896
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="Vtri"
+Px=1312,1152
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="TACH+"
+Px=376,192
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CP1"
+Px=376,208
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="CP2/IN+"
+Px=376,224
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="EMIT"
+Px=376,240
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="COL"
+Px=376,256
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="V+"
+Px=528,192
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="IN-"
+Px=528,208
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
+[Grid Text]
+Text="TACH-/GND"
+Px=528,224
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+CBorder=None
+
 [Schematic]
 CurrentSection 0=0
 CurrentSection 1=0
@@ -1336,7 +1745,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1
+Scale=1.3333333333333333
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -1524,9 +1933,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=338,130
+SB 3=8,0
 Scale 3=1.3333333333333333
-Px=1337,489
+Px=886,821
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1690,7 +2099,57 @@ Text=*
 Text=* A .cir file is typically found in the data directory
 Text=*
 Text=
-Text=.INCLUDE C:\Users\shr20\Downloads\sboma34d\OPAx197.LIB
+Text=.INCLUDE C:\MC12\LIBRARY\OPAx197.LIB
+Text=.INCLUDE C:\MC12\LIBRARY\LM29x7.lib
+Text=.MODEL IRLZ44N NMOS ()
+Text=.SUBCKT LM2917-8 TACH+ CP1 CP2/IN+ EMIT COL v+ IN- TACH-/GND
+Text=R1  i1 80 10k
+Text=Q5  i6 83 81 0 QNN
+Text=D1  81 i8 D
+Text=R81 83 i8 1.6k
+Text=R82 84 83 1.6k
+Text=Q6  i6 85 84 0 QNN
+Text=I1  i6 85 200µ
+Text=D8  33 31 Z68
+Text=D2  85 86 D
+Text=D3  86 i8 D
+Text=R32 31 32 750
+Text=Q34 i8 32 31 0 QNP
+Text=Q33 32 33 i8 0 QNN
+Text=R33 33 i8 750
+Text=R30 i6 31 1m
+Text=R80 81 80 1m
+Text=.model Z68 d(is=.88f rs=.25 cjo=175p m=.55 nbv=1.7 bv=6.8 vj=.75 isr=1.86n
+Text=+nr=2 ibv=20.245m ibvl=1.96m nbvl=15 tbv1=-21.3u vpk=6.8)
+Text=.model QNN NPN
+Text=.model QNP PNP
+Text=.model D D
+Text=XU1 80 i8 i2 i3 i3 i7 i4 i5 i6 i8 LM29x7
+Text=.ends LM2917-8
+Text=.SUBCKT LM2917-8 TACH+ CP1 CP2/IN+ EMIT TACH-/GND IN- V+ COL
+Text=R1  TACH+ 80 10k
+Text=Q5  i6 83 81 0 QNN
+Text=D1  81 i8 D
+Text=R81 83 i8 1.6k
+Text=R82 84 83 1.6k
+Text=Q6  i6 85 84 0 QNN
+Text=I1  i6 85 200µ
+Text=D8  33 31 Z68
+Text=D2  85 86 D
+Text=D3  86 i8 D
+Text=R32 31 32 750
+Text=Q34 i8 32 31 0 QNP
+Text=Q33 32 33 i8 0 QNN
+Text=R33 33 i8 750
+Text=R30 i6 31 1m
+Text=R80 81 80 1m
+Text=.model Z68 d(is=.88f rs=.25 cjo=175p m=.55 nbv=1.7 bv=6.8 vj=.75 isr=1.86n
+Text=+nr=2 ibv=20.245m ibvl=1.96m nbvl=15 tbv1=-21.3u vpk=6.8)
+Text=.model QNN NPN
+Text=.model QNP PNP
+Text=.model D D
+Text=XU1 80 i8 i2 i3 i3 i7 i4 i5 i6 i8 LM29x7
+Text=.ends LM2917-8
 
 [InfoPage]
 InfoPage=True
@@ -1925,7 +2384,7 @@ ALIGNBOTTOM=No
 
 [DC]
 WinID=3
-Window Placement=2,3, -1,-1, -8,-31, 26,26,1123,515
+Window Placement=2,3, 0,701, -8,-31, 26,26,1123,515
 Font=Height=-19,FStyle=0,Color=#0000FF,Name=Arial
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
@@ -1983,7 +2442,7 @@ MonMaxShow=3
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
-MonExprYWidth=286
+MonExprYWidth=563
 MonRangeXWidth=90
 MonRangeYWidth=90
 AnimateWait=None
@@ -2260,12 +2719,10 @@ Analysis=DC
 Plt=1
 AliasID=1
 XExp=DCINPUT1
-YExp=v(vOUT)
-XRng=1000
-YRng=10.68,10.48
+YExp=v(Vout)
+XRng=AutoAlways
+YRng=AutoAlways
 Options=LINEARX,LINEARY
-Range Grid X=200
-Range Grid Y=0.04
 Enable=Enable
 Line Color=#0000FF
 Text Color=#0000FF
@@ -2284,6 +2741,8 @@ NOFmtY=3E
 [WaveForm]
 Analysis=DC
 AliasID=-1
+XRng=AutoAlways
+YRng=AutoAlways
 Options=LINEARX,LINEARY
 Enable=Enable
 Line Color=#FF0000
@@ -2303,6 +2762,8 @@ NOFmtY=3E
 [WaveForm]
 Analysis=DC
 AliasID=-1
+XRng=AutoAlways
+YRng=AutoAlways
 Options=LINEARX,LINEARY
 Enable=Enable
 Line Color=#008000
