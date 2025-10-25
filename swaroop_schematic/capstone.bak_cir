@@ -7,8 +7,21 @@ Shape Version=11.00
 Screen=1536,960
 MCAPVersion=12.2.0.3
 Key ID=Demo
-NLCnt=138
-TXCnt=30
+NLCnt=191
+TXCnt=31
+
+[shapedef]
+Name=555
+Rectangle=0,8,80,88
+FColor=None
+Line=0,32,-16,32
+Line=0,64,-16,64
+Line=40,88,40,104
+Line=32,8,32,-8
+Line=64,8,64,-8
+Line=80,32,96,32
+Line=16,8,16,-8
+Line=80,64,96,64
 
 [shapedef]
 Name=Battery
@@ -37,6 +50,28 @@ Line=24,40,56,40
 Root="Opamp.root",-16,-8,0
 
 [shapedef]
+Name=DC Motor
+Rectangle=-8,46,8,50
+FColor=None
+Rectangle=-8,14,8,18
+FColor=None
+Line=0,0,0,14
+Line=0,64,0,50
+Arc=-16,16,16,48 , -9,16,-9,48
+Arc=-16,16,16,48 , 9,48,9,16
+Text="M"
+TextInfo=-6,24,6,40 , -14,4,"Arial"
+Ellipse=38,14,42,18
+FColor=None
+Line=24,16,38,16
+Ellipse=38,30,42,34
+FColor=None
+Line=24,32,38,32
+Ellipse=38,46,42,50
+FColor=None
+Line=24,48,38,48
+
+[shapedef]
 Name=Ground
 Line=0,0,12,0
 Line=12,-8,12,8
@@ -46,6 +81,33 @@ Line=24,0,24,0
 [shapedef]
 Name=Minus.root
 Line=-2,0,2,0
+
+[shapedef]
+Name=Mos1.root
+Line=0,0,10,0
+Line=10,-8,10,8
+Rectangle=12,-12,14,12
+Current=32,-24,32,-16
+Current=32,24,32,16
+Current=0,-8,8,-8
+PolyOpen=3
+PolyLine=24,-24
+PolyLine=24,-8
+PolyLine=13,-8
+PolyOpen=3
+PolyLine=24,24
+PolyLine=24,8
+PolyLine=13,8
+
+[shapedef]
+Name=NMOS
+Root="Mos1.root",0,0,0
+Line=14,0,24,0
+PolyClosed=3
+PolyLine=16,0
+PolyLine=20,4
+PolyLine=20,-4
+Current=32,-4,24,-4
 
 [shapedef]
 Name=Opamp5
@@ -90,6 +152,20 @@ PolyLine=48,0
 PolyLine=48,0
 Current=32,8,16,8
 
+[shapedef]
+Name=SPICE_V
+Root="Vsource.root",0,0,0
+
+[shapedef]
+Name=Vsource.root
+Line=0,0,12,0
+Line=36,0,48,0
+Ellipse=12,-12,36,12
+FColor=None
+Line=7,5,7,9
+Root="Plus.root",41,7,0
+Current=32,16,16,16
+
 [compdef]
 Name=Battery
 Definition=Battery
@@ -107,7 +183,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-Used=313
+Used=315
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -133,7 +209,7 @@ Name=Resistor
 Definition=Resistor
 Shape=Resistor
 Mask=6913
-Used=216
+Used=221
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -145,7 +221,7 @@ Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
 Mask=7425
-Used=49
+Used=52
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -167,6 +243,66 @@ Pin="3",a,2,-2,7,8
 Pin="4",a,2,6,7,5
 Pin="5",a,7,2,-3,-3
 Pin="6",a,7,5,-3,-3
+
+[compdef]
+Name=NMOS
+Definition=NMOS
+Shape=NMOS
+Mask=4352
+Used=21
+memo=NMOS
+Label Offset=29,1,7,25
+PinCnt=4
+Pin="Drain",3,-3,8,9
+Pin="Gate",0,0,-20,-4
+Pin="Source",3,3,8,4
+Pin="Body",3,0,8,-1
+
+[compdef]
+Name=DC_Motor
+Definition=Macro
+Shape=DC Motor
+Mask=4096
+Used=4
+memo=DC Motor macro
+Link=http://www.spectrum-soft.com/news/fall2007/dcmotor.shtm
+Label Offset=16,66,5,10
+PinCnt=5
+Pin="Inp",a,0,0
+Pin="Inn",a,0,8
+Pin="Velocity",a,5,2,1,-2
+Pin="BEMF",a,5,4
+Pin="Torque",a,5,6
+
+[compdef]
+Name=555
+Definition=Macro
+Shape=555
+Mask=20480
+Used=1
+memo=555 Timer Macro
+Label Offset=87,72,-20,88
+PinCnt=8
+Pin="RESET",d,2,-1,-33,17
+Pin="DISCH",a,12,8,-49,8
+Pin="THRES",a,-2,4,20,7
+Pin="TRIG",a,-2,8,20,8
+Pin="OUT",d,12,4,-39,7
+Pin="CONT",a,8,-1,5,17
+Pin="VCC",a,4,-1,5,17
+Pin="GND",a,5,13,3,-3
+
+[compdef]
+Name=Voltage Source
+Definition=VSpice
+Shape=SPICE_V
+Mask=4865
+Used=55
+memo=Voltage Source
+Label Offset=19,13,15,13
+PinCnt=2
+Pin="Plus",6,0,-5,-6
+Pin="Minus",0,0,-20,-6
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,1123,515
@@ -570,7 +706,7 @@ Style=8192
 
 [Attr]
 ON=18,-18,VALUE
-V=5
+V=0
 Style=8192
 
 [Attr]
@@ -863,6 +999,7 @@ Pxs=1392,864,1392,872
 
 [Comp]
 Name=LM311_TI
+Enable=FALSE
 Px=1552,840
 
 [Attr]
@@ -883,6 +1020,7 @@ Pxs=1432,832,1536,832
 
 [Comp]
 Name=Opamp
+Enable=FALSE
 Px=1240,1176
 Rot=4
 
@@ -901,6 +1039,7 @@ V
 
 [Comp]
 Name=Resistor
+Enable=FALSE
 Px=1168,1128
 Rot=4
 
@@ -920,35 +1059,45 @@ V
 
 [Wire]
 Pxs=1312,1088,1312,1152
+Enable=FALSE
 
 [Wire]
 Pxs=1216,1128,1240,1128
+Enable=FALSE
 
 [Wire]
 Pxs=1296,1088,1312,1088
+Enable=FALSE
 
 [Wire]
 Pxs=1232,1176,1232,1192
+Enable=FALSE
 
 [Wire]
 Pxs=1232,1176,1240,1176
+Enable=FALSE
 
 [Comp]
 Name=Ground
+Enable=FALSE
 Px=1232,1192
 Rot=7
 
 [Wire]
 Pxs=1272,1112,1272,1120
+Enable=FALSE
 
 [Wire]
 Pxs=1272,1184,1272,1192
+Enable=FALSE
 
 [Wire]
 Pxs=1312,1152,1416,1152
+Enable=FALSE
 
 [Comp]
 Name=Opamp
+Enable=FALSE
 Px=1064,1152
 Rot=4
 
@@ -967,32 +1116,41 @@ V
 
 [Wire]
 Pxs=1024,1104,1064,1104
+Enable=FALSE
 
 [Comp]
 Name=Ground
+Enable=FALSE
 Px=1024,1112
 Rot=7
 
 [Wire]
 Pxs=1096,1088,1096,1096
+Enable=FALSE
 
 [Wire]
 Pxs=1096,1160,1096,1168
+Enable=FALSE
 
 [Wire]
 Pxs=1024,1104,1024,1112
+Enable=FALSE
 
 [Wire]
 Pxs=1312,1152,1312,1224
+Enable=FALSE
 
 [Wire]
 Pxs=1040,1152,1040,1224
+Enable=FALSE
 
 [Wire]
 Pxs=1040,1152,1064,1152
+Enable=FALSE
 
 [Comp]
 Name=Resistor
+Enable=FALSE
 Px=1152,1200
 Rot=3
 
@@ -1012,12 +1170,15 @@ V
 
 [Wire]
 Pxs=1240,1088,1240,1128
+Enable=FALSE
 
 [Wire]
 Pxs=1240,1088,1248,1088
+Enable=FALSE
 
 [Comp]
 Name=Resistor
+Enable=FALSE
 Px=1176,1224
 Rot=4
 
@@ -1037,27 +1198,35 @@ V
 
 [Wire]
 Pxs=1040,1224,1152,1224
+Enable=FALSE
 
 [Wire]
 Pxs=1224,1224,1312,1224
+Enable=FALSE
 
 [Wire]
 Pxs=1152,1200,1152,1224
+Enable=FALSE
 
 [Wire]
 Pxs=1152,1224,1176,1224
+Enable=FALSE
 
 [Wire]
 Pxs=1152,1128,1152,1152
+Enable=FALSE
 
 [Wire]
 Pxs=1152,1128,1168,1128
+Enable=FALSE
 
 [Wire]
 Pxs=1136,1128,1152,1128
+Enable=FALSE
 
 [Comp]
 Name=Capacitor
+Enable=FALSE
 Px=1296,1088
 Rot=2
 
@@ -1077,19 +1246,402 @@ V
 
 [Comp]
 Name=Ground
+Enable=FALSE
 Px=1616,880
 Rot=7
 
 [Wire]
 Pxs=1608,880,1616,880
+Enable=FALSE
 
-[Grid Text]
-Text="need to build fake encoder output for pwm testing"
-Px=1032,280
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
+[Comp]
+Name=Resistor
+Enable=FALSE
+Px=1656,832
+Rot=3
+
+[Attr]
+ON=-32,-25,PART
+V=R15
+Style=8192
+
+[Attr]
+ON=-35,-39,RESISTANCE
+V=4.7k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1608,856,1656,856
+Enable=FALSE
+
+[Wire]
+Pxs=1656,856,1736,856
+Enable=FALSE
+
+[Comp]
+Name=NMOS
+Enable=FALSE
+Px=1768,856
+Rot=4
+
+[Attr]
+ON=20,7,PART
+V=M1
+Style=8192
+
+[Attr]
+ON=7,39,MODEL
+V=IRLZ44N
+
+[Attr]
+ON=7,67,PACKAGE
+V=TO-220AB
+
+[Comp]
+Name=Resistor
+Enable=FALSE
+Px=1744,888
+Rot=4
+
+[Attr]
+ON=2,9,PART
+V=R16
+Style=8192
+
+[Attr]
+ON=10,20,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1792,880,1792,888
+Enable=FALSE
+
+[Wire]
+Pxs=1736,856,1736,888
+Enable=FALSE
+
+[Wire]
+Pxs=1736,888,1744,888
+Enable=FALSE
+
+[Wire]
+Pxs=1736,856,1768,856
+Enable=FALSE
+
+[Wire]
+Pxs=1792,824,1792,832
+Enable=FALSE
+
+[Wire]
+Pxs=1656,776,1656,784
+Enable=FALSE
+
+[Wire]
+Pxs=1656,832,1656,856
+Enable=FALSE
+
+[Comp]
+Name=Resistor
+Enable=FALSE
+Px=1792,824
+Rot=3
+
+[Attr]
+ON=-32,-33,PART
+V=RL
+Style=8192
+
+[Attr]
+ON=-35,-39,RESISTANCE
+V
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1792,768,1792,776
+Enable=FALSE
+
+[Wire]
+Pxs=1048,528,1048,632
+
+[Wire]
+Pxs=1048,832,1056,832
+
+[Wire]
+Pxs=1048,632,1056,632
+
+[Wire]
+Pxs=1048,632,1048,832
+
+[Comp]
+Name=Ground
+Enable=FALSE
+Px=1792,888
+Rot=7
+
+[Comp]
+Name=DC_Motor
+Enable=FALSE
+Px=1848,680
+
+[Attr]
+ON=16,66,PART
+V=X10
+Style=8192
+
+[Attr]
+ON=16,80,FILE
+V=DC_Motor
+
+[Attr]
+ON=16,108,Param:LA
+V=1.5M
+
+[Attr]
+ON=16,122,Param:RA
+V=.5
+
+[Attr]
+ON=16,136,Param:KE
+V=.05
+
+[Attr]
+ON=16,150,Param:KT
+V=.05
+
+[Attr]
+ON=16,164,Param:JM
+V=250U
+
+[Attr]
+ON=16,178,Param:BM
+V=.1M
+
+[Attr]
+ON=16,192,Param:TL
+V=0
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1568,888,1568,896
+Enable=FALSE
+
+[Wire]
+Pxs=1568,816,1568,824
+Enable=FALSE
+
+[Wire]
+Pxs=952,528,1048,528
+
+[Comp]
+Name=555
+Style=ShowPinText
+Px=472,888
+
+[Attr]
+ON=87,72,PART
+V=X11
+Style=8192
+
+[Attr]
+ON=87,86,FILE
+V=555
+
+[Attr]
+ON=87,114,PACKAGE
+V=DIP8
+
+[Comp]
+Name=Resistor
+Px=488,832
+Rot=3
+
+[Attr]
+ON=-32,-25,PART
+V=R17
+Style=8192
+
+[Attr]
+ON=-23,-39,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Capacitor
+Px=648,1008
+Rot=5
+
+[Attr]
+ON=12,-26,PART
+V=C3
+Style=8192
+
+[Attr]
+ON=12,-40,CAPACITANCE
+V=10u
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Comp]
+Name=Voltage Source
+Px=320,1008
+Rot=3
+
+[Attr]
+ON=-31,-27,PART
+V=V5
+Style=8192
+
+[Attr]
+ON=-300,-41,VALUE
+V=DC 0 AC 1 0 Pulse 0 5 100n 10n 10n 400n 1u
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Attr]
+ON=0,0,SMOOTHING
+V=N
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseS
+V=N
+Style=256
+
+[Attr]
+ON=0,0,FRACTION
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_PulseF
+V=.2
+Style=256
+
+[Attr]
+ON=0,0,Saved_Pulse
+V=DC 0 AC 1 0 Pulse 0 5 100n 10n 10n 400n 1u
+Style=256
+
+[Wire]
+Pxs=320,952,320,960
+
+[Wire]
+Pxs=320,952,456,952
+
+[Comp]
+Name=Ground
+Px=320,1024
+Rot=7
+
+[Wire]
+Pxs=320,1008,320,1024
+
+[Wire]
+Pxs=320,1008,512,1008
+
+[Wire]
+Pxs=512,992,512,1008
+
+[Wire]
+Pxs=432,920,456,920
+
+[Wire]
+Pxs=432,784,432,920
+
+[Wire]
+Pxs=432,784,488,784
+
+[Wire]
+Pxs=648,784,648,952
+
+[Wire]
+Pxs=512,1008,608,1008
+
+[Wire]
+Pxs=488,784,648,784
+
+[Wire]
+Pxs=488,832,488,856
+
+[Wire]
+Pxs=488,856,504,856
+
+[Wire]
+Pxs=488,856,488,880
+
+[Wire]
+Pxs=504,856,504,880
+
+[Comp]
+Name=Capacitor
+Px=608,968
+Rot=5
+
+[Attr]
+ON=12,-26,PART
+V=C4
+Style=8192
+
+[Attr]
+ON=12,-40,CAPACITANCE
+V=10u
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=608,968,608,1008
+
+[Wire]
+Pxs=608,1008,648,1008
+
+[Wire]
+Pxs=568,952,648,952
+
+[Wire]
+Pxs=648,952,648,960
+
+[Wire]
+Pxs=488,760,488,784
+
+[Wire]
+Pxs=536,864,536,880
+
+[Wire]
+Pxs=536,864,608,864
+
+[Wire]
+Pxs=608,864,608,920
+
+[Wire]
+Pxs=568,920,592,920
 
 [Grid Text]
 Text="reference from f to v chip input for testing"
@@ -1115,30 +1667,6 @@ GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
 Page=3
-CBorder=None
-
-[Grid Text]
-Text="out"
-Px=80,80
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="out"
-Px=80,80
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
-CBorder=None
-
-[Grid Text]
-Text="VE"
-Px=80,80
-GridSnap=True
-JustifyH=Left
-JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
@@ -1293,6 +1821,7 @@ Angle=2
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -1301,6 +1830,7 @@ Px=1272,1192
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -1309,6 +1839,7 @@ Px=1152,1056
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -1318,11 +1849,57 @@ Angle=2
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
 Text="VC"
 Px=1096,1168
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Enable=FALSE
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=1656,776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Enable=FALSE
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=1792,776
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Enable=FALSE
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=1568,824
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Enable=FALSE
+CBorder=None
+
+[Grid Text]
+Text="VC"
+Px=1568,896
+GridSnap=True
+JustifyH=Left
+JustifyV=Bottom
+Enable=FALSE
+CBorder=None
+
+[Grid Text]
+Text="VE"
+Px=488,760
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1524,9 +2101,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=338,130
+SB 3=0,288
 Scale 3=1.3333333333333333
-Px=1337,489
+Px=761,829
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -1590,6 +2167,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
+SB 0=22,18
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -1691,6 +2269,7 @@ Text=* A .cir file is typically found in the data directory
 Text=*
 Text=
 Text=.INCLUDE C:\Users\shr20\Downloads\sboma34d\OPAx197.LIB
+Text=.MODEL IRLZ44N NMOS ()
 
 [InfoPage]
 InfoPage=True
@@ -2327,6 +2906,8 @@ PlaceText=True
 
 [Limits]
 Analysis=DynamicDC
+Temp=27
+SliderPer=10
 PlaceText=True
 
 [Pane]
