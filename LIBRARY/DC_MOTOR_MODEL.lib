@@ -1,0 +1,16 @@
+* DC motor, physics model
+* Pins: P=armature+, N=armature−, W=speed (V(W)=ω in rad/s)
+.SUBCKT DCMOTOR_CUSTOM P N W PARAMS: RA=0.5 LA=1.5m KE=0.05 KT=0.05 J=2.5e-4 B=1e-4
+
+* Armature path
+Ra_     P    A      {RA}
+La_     A    B      {LA}
+VSENSE1 B    C      DC 0
+EEMF    C    N      W 0   {KE}     ; back-EMF = KE * V(W)
+
+* Mechanics at node W
+Cj      W    0      {J}           ; inertia
+Rb      W    0      {1/B}         ; viscous friction
+Ftorque W    0      VSENSE1 {KT}  ; torque = KT * I(VSENSE1)
+
+.ENDS DCMOTOR_CUSTOM
