@@ -1,15 +1,15 @@
 ********************************************************************************
-***                       Micro-Cap 12.2.0.3 (64 bit)                        ***
+***                       Micro-Cap 12.2.0.3 (32 bit)                        ***
 ***                                                                          ***
 ***                                                                          ***
 ***               Transient Analysis of derek_microcap_circuit               ***
-***                          10/25/2025 8:58:03 PM                           ***
+***                          10/26/2025 10:47:33 PM                          ***
 ********************************************************************************
 Limits
 ======
-Maximum Run Time           5m
+Maximum Run Time           15m
 Output Start Time (tstart) 0
-Maximum Time Step          0
+Maximum Time Step          2u
 Number of Points           51
 Temperature                Linear 27
 Retrace Runs               1
