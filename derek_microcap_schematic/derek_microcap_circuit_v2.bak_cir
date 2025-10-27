@@ -7,7 +7,7 @@ Shape Version=11.00
 Screen=1368,912
 MCAPVersion=12.2.0.5
 Key ID=Demo
-NLCnt=174
+NLCnt=173
 TXCnt=32
 
 [shapedef]
@@ -149,6 +149,24 @@ Line=-2,0,2,0
 Line=0,-2,0,2
 
 [shapedef]
+Name=Pot
+Line=0,0,12,0
+Line=12,0,14,-4
+Line=14,-4,18,4
+Line=18,4,22,-4
+Line=22,-4,26,4
+Line=26,4,30,-4
+Line=30,-4,34,4
+Line=34,4,36,0
+Line=36,0,48,0
+PolyClosed=4
+PolyLine=24,4
+PolyLine=24,4
+PolyLine=22,8
+PolyLine=26,8
+Line=24,8,24,16
+
+[shapedef]
 Name=Resistor
 PolyOpen=12
 PolyLine=0,0
@@ -207,8 +225,8 @@ Current=32,16,16,16
 Name=Battery
 Definition=Battery
 Shape=Battery
-Mask=6913
-Used=115
+Mask=7425
+Used=114
 memo=Battery
 Label Offset=19,7,10,13
 PinCnt=2
@@ -220,7 +238,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=257
-Used=419
+Used=418
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -357,6 +375,19 @@ Label Offset=15,12,-29,12
 PinCnt=2
 Pin="Plus",0,0,8,11
 Pin="Minus",0,6,8,3
+
+[compdef]
+Name=Pot
+Definition=Macro
+Shape=Pot
+Mask=4096
+Used=1
+memo=Potentiometer Macro
+Label Offset=32,4,9,11
+PinCnt=3
+Pin="PINA",a,0,0,-13,-5
+Pin="PINB",a,3,2,6,5
+Pin="PINC",a,6,0,-12,-5
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 0,0,841,378
@@ -788,31 +819,7 @@ Pxs=976,400,1024,400
 Pxs=1072,400,1072,448
 
 [Wire]
-Pxs=1072,448,1096,448
-
-[Wire]
-Pxs=1072,448,1072,664
-
-[Wire]
 Pxs=1072,664,1096,664
-
-[Comp]
-Name=Resistor
-Px=1096,448
-
-[Attr]
-ON=8,11,PART
-V=R7
-Style=8192
-
-[Attr]
-ON=8,25,RESISTANCE
-V=750
-Style=8192
-
-[Attr]
-ON=0,0,PACKAGE
-V
 
 [Comp]
 Name=Resistor
@@ -913,12 +920,12 @@ Name=Capacitor
 Px=1192,664
 
 [Attr]
-ON=13,-45,PART
+ON=16,-26,PART
 V=C1
 Style=8192
 
 [Attr]
-ON=8,-30,CAPACITANCE
+ON=-9,-20,CAPACITANCE
 V=10u
 Style=8192
 
@@ -1643,6 +1650,34 @@ Pxs=1696,560,1696,568
 [Wire]
 Pxs=1696,560,1704,560
 
+[Comp]
+Name=Pot
+Px=1072,448
+
+[Attr]
+ON=32,4,PART
+V=X12
+Style=8192
+
+[Attr]
+ON=32,18,FILE
+V=Pot
+
+[Attr]
+ON=32,46,Param:POTSIZE
+V=10K
+
+[Attr]
+ON=32,60,Param:PERCENT
+V=50
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1072,448,1072,664
+
 [Grid Text]
 Text="VE"
 Px=184,560
@@ -2101,9 +2136,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-SB 3=618,313
+SB 3=734,258
 Scale 3=1
-Px=1113,484
+Px=1074,447
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2156,7 +2191,7 @@ Scale 0=1
 Scale 1=1
 Scale 2=1
 Scale 3=1
-Px=187,74
+Px=182,70
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2361,7 +2396,7 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
-MonMaxShow=14
+MonMaxShow=13
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
@@ -3028,7 +3063,7 @@ Analysis=Transient
 Plt=1
 AliasID=2
 XExp=T
-YExp=v(SP)
+YExp=v(V1)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
@@ -3128,7 +3163,7 @@ YExp=v(SumOut)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
-Enable=Enable
+Enable=DontRun
 Line Color=#0000FF
 Text Color=#0000FF
 Rainbow=False
@@ -3275,30 +3310,6 @@ Options=LINEARX,LINEARY
 Enable=Enable
 Line Color=#008000
 Text Color=#008000
-Rainbow=False
-VFmtX=3
-VFmtY=3
-ScaleFactorX="None"
-ScaleFactorY="None"
-ScaleUnitsX="Auto"
-ScaleUnitsY="Auto"
-SFmtX=2
-SFmtY=2
-NOFmtX=3E
-NOFmtY=3E
-
-[WaveForm]
-Analysis=Transient
-Plt=1
-AliasID=14
-XExp=T
-YExp=v(IntOut)
-XRng=AutoAlways
-YRng=AutoAlways
-Options=LINEARX,LINEARY
-Enable=Enable
-Line Color=#FF00FF
-Text Color=#FF00FF
 Rainbow=False
 VFmtX=3
 VFmtY=3
@@ -3515,9 +3526,13 @@ Analysis=Stability
 [Stepping]
 Analysis=Transient
 Index=1
-Status=On
 Method=List
 Parameter Type=Component
+Name=V1
+Param=dc.value
+From=0,4,8,12
+To=12
+Value=1
 
 [Watch]
 Analysis=Transient
