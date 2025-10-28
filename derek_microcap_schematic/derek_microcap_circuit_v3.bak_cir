@@ -7,8 +7,13 @@ Shape Version=11.00
 Screen=1368,912
 MCAPVersion=12.2.0.5
 Key ID=Demo
+<<<<<<< HEAD
 NLCnt=174
 TXCnt=32
+=======
+NLCnt=181
+TXCnt=31
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 
 [shapedef]
 Name=Battery
@@ -231,7 +236,11 @@ Name=Resistor
 Definition=Resistor
 Shape=Resistor
 Mask=6401
+<<<<<<< HEAD
 Used=298
+=======
+Used=299
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -376,7 +385,11 @@ SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
 Show Nodes=False
+<<<<<<< HEAD
 Show Voltages=False
+=======
+Show Voltages=True
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Show Current=False
 Show Power=False
 Show Condition=False
@@ -807,7 +820,11 @@ Style=8192
 
 [Attr]
 ON=8,25,RESISTANCE
+<<<<<<< HEAD
 V=750
+=======
+V=10k
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Style=8192
 
 [Attr]
@@ -825,7 +842,11 @@ Style=8192
 
 [Attr]
 ON=8,25,RESISTANCE
+<<<<<<< HEAD
 V=1k
+=======
+V=3k
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Style=8192
 
 [Attr]
@@ -856,7 +877,11 @@ Rot=7
 Pxs=1144,664,1144,688
 
 [Wire]
+<<<<<<< HEAD
 Pxs=1144,664,1192,664
+=======
+Pxs=1144,664,1168,664
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 
 [Wire]
 Pxs=1144,688,1168,688
@@ -913,12 +938,20 @@ Name=Capacitor
 Px=1192,664
 
 [Attr]
+<<<<<<< HEAD
 ON=13,-45,PART
+=======
+ON=87,-16,PART
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 V=C1
 Style=8192
 
 [Attr]
+<<<<<<< HEAD
 ON=8,-30,CAPACITANCE
+=======
+ON=82,-1,CAPACITANCE
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 V=10u
 Style=8192
 
@@ -949,7 +982,11 @@ Style=8192
 
 [Attr]
 ON=8,25,RESISTANCE
+<<<<<<< HEAD
 V=1k
+=======
+V=3k
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Style=8192
 
 [Attr]
@@ -972,9 +1009,12 @@ Pxs=1264,448,1280,448
 Pxs=1264,664,1264,712
 
 [Wire]
+<<<<<<< HEAD
 Pxs=1560,528,1608,528
 
 [Wire]
+=======
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Pxs=1608,576,1664,576
 
 [Wire]
@@ -1060,6 +1100,7 @@ ON=0,0,PACKAGE
 V
 
 [Comp]
+<<<<<<< HEAD
 Name=Resistor
 Px=1928,600
 
@@ -1079,6 +1120,10 @@ V
 
 [Comp]
 Name=IRLZ44
+=======
+Name=IRLZ44
+Enable=FALSE
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Px=2048,592
 
 [Attr]
@@ -1103,7 +1148,11 @@ Pxs=2072,616,2072,624
 
 [Comp]
 Name=Ground
+<<<<<<< HEAD
 Px=2072,672
+=======
+Px=2072,696
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Rot=7
 
 [Wire]
@@ -1260,7 +1309,10 @@ Pxs=2176,472,2176,480
 
 [Comp]
 Name=NFV
+<<<<<<< HEAD
 Enable=FALSE
+=======
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Px=2184,616
 Rot=3
 
@@ -1271,7 +1323,11 @@ Style=8192
 
 [Attr]
 ON=-177,-41,VALUE
+<<<<<<< HEAD
 V={ -Ksens * V(speedTest) }
+=======
+V={ v(velocity) * 1.88}
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 
 [Attr]
 ON=-61,-55,DERIVATIVE
@@ -1295,6 +1351,7 @@ V
 
 [Wire]
 Pxs=2184,560,2184,568
+<<<<<<< HEAD
 Enable=FALSE
 
 [Wire]
@@ -1304,6 +1361,14 @@ Enable=FALSE
 [Comp]
 Name=Ground
 Enable=FALSE
+=======
+
+[Wire]
+Pxs=2184,616,2184,624
+
+[Comp]
+Name=Ground
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Px=2184,624
 Rot=7
 
@@ -1338,9 +1403,12 @@ Style=8192
 ON=0,0,PACKAGE
 V
 
+<<<<<<< HEAD
 [Wire]
 Pxs=1608,528,1608,576
 
+=======
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 [Comp]
 Name=Resistor
 Px=1752,600
@@ -1371,7 +1439,11 @@ Style=8192
 
 [Attr]
 ON=15,-41,VALUE
+<<<<<<< HEAD
 V=DC 0 AC 0 0 PWL 0,1, .5m,4 1m,6 1.5m,8 2m,10 2.5m,12 3m,12 4m,24 5m,24 6m,24 7m,24 8m,24 10m,24 11m,12 12m,12 13m,12 14m,12 12,15m
+=======
+V=DC 24
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 
 [Attr]
 ON=0,0,PACKAGE
@@ -1379,7 +1451,11 @@ V
 
 [Attr]
 ON=0,0,Saved_None
+<<<<<<< HEAD
 V=DC 12 
+=======
+V=DC 24 
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Style=256
 
 [Attr]
@@ -1542,19 +1618,27 @@ Pxs=1536,496,1536,568
 Pxs=1512,568,1536,568
 
 [Wire]
+<<<<<<< HEAD
 Pxs=1536,568,1560,568
 
 [Wire]
 Pxs=1560,528,1560,568
+=======
+Pxs=1536,568,1608,568
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 
 [Wire]
 Pxs=2008,600,2040,600
 
 [Wire]
+<<<<<<< HEAD
 Pxs=1840,600,1928,600
 
 [Wire]
 Pxs=1976,600,2008,600
+=======
+Pxs=1840,600,2008,600
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 
 [Wire]
 Pxs=2040,600,2040,616
@@ -1643,6 +1727,61 @@ Pxs=1696,560,1696,568
 [Wire]
 Pxs=1696,560,1704,560
 
+<<<<<<< HEAD
+=======
+[Wire]
+Pxs=1608,568,1608,576
+
+[Wire]
+Pxs=1168,632,1168,664
+
+[Wire]
+Pxs=1168,664,1192,664
+
+[Comp]
+Name=Resistor
+Px=1240,632
+Rot=2
+
+[Attr]
+ON=-34,-34,PART
+V=R19
+Style=8192
+
+[Attr]
+ON=-34,-20,RESISTANCE
+V=1k
+Style=8192
+
+[Attr]
+ON=0,0,PACKAGE
+V
+
+[Wire]
+Pxs=1168,632,1192,632
+
+[Wire]
+Pxs=1240,632,1264,632
+
+[Wire]
+Pxs=1264,632,1264,664
+
+[Wire]
+Pxs=2072,672,2072,688
+
+[Wire]
+Pxs=2072,688,2120,688
+
+[Wire]
+Pxs=2072,688,2072,696
+
+[Wire]
+Pxs=2072,568,2120,568
+
+[Wire]
+Pxs=2120,568,2120,688
+
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 [Grid Text]
 Text="VE"
 Px=184,560
@@ -1793,7 +1932,11 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
+<<<<<<< HEAD
 Text="speedTest"
+=======
+Text="velocity"
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Px=2176,480
 GridSnap=True
 JustifyH=Left
@@ -1806,7 +1949,10 @@ Px=2184,560
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+<<<<<<< HEAD
 Enable=FALSE
+=======
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 CBorder=None
 
 [Grid Text]
@@ -1866,6 +2012,7 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
+<<<<<<< HEAD
 Text="PI_Out"
 Px=1392,544
 GridSnap=True
@@ -1874,6 +2021,8 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
+=======
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Text="VGate"
 Px=2008,600
 GridSnap=True
@@ -1913,7 +2062,11 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
+<<<<<<< HEAD
 Scale=1
+=======
+Scale=0.95032225438190665
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -2079,7 +2232,11 @@ ALIGNBOTTOM=Yes
 
 [Section]
 Index=0
+<<<<<<< HEAD
 Name="derek_microcap_circuit_v2"
+=======
+Name="derek_microcap_circuit_v3"
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Type=Main
 Enable=True
 CurrentPage 0=0
@@ -2101,9 +2258,15 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
+<<<<<<< HEAD
 SB 3=618,313
 Scale 3=1
 Px=1113,484
+=======
+SB 3=1138,283
+Scale 3=0.95032225438190665
+Px=1501,394
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2361,7 +2524,11 @@ FFT_IncludeDCHarmonic=False
 FFT_AutoScale_Harmonics="10"
 PrinterAutoTile=No
 PrinterBlackBorder=No
+<<<<<<< HEAD
 MonMaxShow=14
+=======
+MonMaxShow=13
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 MonPageWidth=66
 MonPlotWidth=21
 MonExprXWidth=142
@@ -2963,7 +3130,11 @@ Seed=0
 
 [Limits]
 Analysis=Transient
+<<<<<<< HEAD
 TMax=12m
+=======
+TMax=100m
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 TStart=0
 TStep=2u
 NPts=51
@@ -2984,7 +3155,11 @@ YExp=v(feedback)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
+<<<<<<< HEAD
 Enable=DontRun
+=======
+Enable=Enable
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Line Color=#000000
 Text Color=#000000
 Rainbow=False
@@ -3032,7 +3207,11 @@ YExp=v(SP)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
+<<<<<<< HEAD
 Enable=Enable
+=======
+Enable=DontRun
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Line Color=#FF0000
 Text Color=#FF0000
 Rainbow=False
@@ -3128,7 +3307,11 @@ YExp=v(SumOut)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
+<<<<<<< HEAD
 Enable=Enable
+=======
+Enable=DontRun
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Line Color=#0000FF
 Text Color=#0000FF
 Rainbow=False
@@ -3146,6 +3329,7 @@ NOFmtY=3E
 [WaveForm]
 Analysis=Transient
 Plt=1
+<<<<<<< HEAD
 AliasID=8
 XExp=T
 YExp=v(PI_Out)
@@ -3170,6 +3354,8 @@ NOFmtY=3E
 [WaveForm]
 Analysis=Transient
 Plt=1
+=======
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 AliasID=9
 XExp=T
 YExp=v(VDrain)
@@ -3272,7 +3458,11 @@ YExp=v(ProOut)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
+<<<<<<< HEAD
 Enable=Enable
+=======
+Enable=DontRun
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Line Color=#008000
 Text Color=#008000
 Rainbow=False
@@ -3296,7 +3486,11 @@ YExp=v(IntOut)
 XRng=AutoAlways
 YRng=AutoAlways
 Options=LINEARX,LINEARY
+<<<<<<< HEAD
 Enable=Enable
+=======
+Enable=DontRun
+>>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Line Color=#FF00FF
 Text Color=#FF00FF
 Rainbow=False
