@@ -1,9 +1,9 @@
 ********************************************************************************
-<<<<<<< HEAD
 ***                       Micro-Cap 12.2.0.3 (64 bit)                        ***
 ***                                                                          ***
 ***                                                                          ***
 ***             Transient Analysis of derek_microcap_circuit_v3              ***
+<<<<<<< Updated upstream
 ***                          10/27/2025 10:20:32 PM                          ***
 ********************************************************************************
 Limits
@@ -15,11 +15,13 @@ Maximum Run Time           12m
 ***                                                                          ***
 ***             Transient Analysis of derek_microcap_circuit_v3              ***
 ***                          10/28/2025 11:21:01 AM                          ***
+=======
+***                          10/28/2025 11:20:54 AM                          ***
+>>>>>>> Stashed changes
 ********************************************************************************
 Limits
 ======
 Maximum Run Time           100m
->>>>>>> 550ac2efe436ae15612c441d638b3e108b407f95
 Output Start Time (tstart) 0
 Maximum Time Step          2u
 Number of Points           51
