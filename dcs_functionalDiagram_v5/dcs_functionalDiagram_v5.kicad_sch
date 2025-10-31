@@ -2568,7 +2568,7 @@
 	)
 	(text "Integration Stage"
 		(exclude_from_sim no)
-		(at 142.748 105.156 0)
+		(at 127.254 104.14 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2707,12 +2707,6 @@
 		(uuid "a108b2a8-0033-4385-abd7-310b97dc29de")
 	)
 	(junction
-		(at 91.44 170.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a3bab366-ef81-4117-82cd-0d90d076235a")
-	)
-	(junction
 		(at 80.01 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2791,16 +2785,6 @@
 	(no_connect
 		(at 39.37 101.6)
 		(uuid "e01bb48d-9733-4992-880f-82a0b6a83e29")
-	)
-	(wire
-		(pts
-			(xy 91.44 173.99) (xy 91.44 170.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "026606c5-87d2-4a20-b762-2d8f402a4640")
 	)
 	(wire
 		(pts
@@ -3594,7 +3578,7 @@
 	)
 	(wire
 		(pts
-			(xy 91.44 163.83) (xy 91.44 170.18)
+			(xy 91.44 163.83) (xy 91.44 167.64)
 		)
 		(stroke
 			(width 0)
@@ -3661,16 +3645,6 @@
 			(type default)
 		)
 		(uuid "cb5cf133-3cbb-4062-97ca-64e3c86b23a8")
-	)
-	(wire
-		(pts
-			(xy 144.78 60.96) (xy 144.78 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc50d189-fd81-4444-b0c7-374eb3ccc416")
 	)
 	(wire
 		(pts
@@ -4269,25 +4243,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 144.78 95.25 180)
+		(lib_id "Device:C_Small")
+		(at 144.78 97.79 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "02f03439-1b30-43c6-a167-7bc33a91e1a6")
-		(property "Reference" "#PWR012"
-			(at 144.78 91.44 0)
+		(uuid "03a93b92-6c74-4199-832d-f041fedaa824")
+		(property "Reference" "C5"
+			(at 148.844 97.028 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 144.526 99.822 0)
+		(property "Value" "0.1u"
+			(at 148.59 99.314 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4295,7 +4268,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 144.78 95.25 0)
+			(at 144.78 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4303,8 +4276,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 144.78 95.25 0)
+		(property "Datasheet" "~"
+			(at 144.78 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4312,8 +4285,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 144.78 95.25 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 144.78 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4322,12 +4295,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "5d6c9193-ddab-4067-8aef-61f34e89e596")
+			(uuid "b9fc55d5-1a18-4d5f-aa20-cb54b5d6852c")
+		)
+		(pin "2"
+			(uuid "c24d7048-f88a-42f4-b411-d0fc4b33ba96")
 		)
 		(instances
 			(project "dcs_functionalDiagram_v5"
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
-					(reference "#PWR012")
+					(reference "C5")
 					(unit 1)
 				)
 			)
@@ -4533,6 +4509,139 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 144.78 100.33 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "09a7412d-f162-4c15-a7b6-03f9041d1ab3")
+		(property "Reference" "#PWR012"
+			(at 144.78 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 144.78 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 144.78 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c18210d-f694-4bf3-aa1a-1a4ff417a37e")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small")
+		(at 177.8 115.57 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0d7418cd-8ef7-42f7-983d-08d1fd5893bf")
+		(property "Reference" "C7"
+			(at 181.864 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 181.61 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 177.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 177.8 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "131d1b93-69a4-4997-a4b4-6e253a861d20")
+		)
+		(pin "2"
+			(uuid "b63c7cdd-3912-44ec-a80e-4949840fce83")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "C7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Potentiometer_US")
 		(at 128.27 40.64 270)
 		(unit 1)
@@ -4605,7 +4714,7 @@
 	)
 	(symbol
 		(lib_id "power:+12V")
-		(at 43.18 50.8 180)
+		(at 43.18 55.88 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4614,7 +4723,7 @@
 		(fields_autoplaced yes)
 		(uuid "10af373a-59ac-4668-8ff1-1aba201eccca")
 		(property "Reference" "#PWR016"
-			(at 43.18 46.99 0)
+			(at 43.18 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4623,7 +4732,7 @@
 			)
 		)
 		(property "Value" "+12V"
-			(at 43.18 55.88 0)
+			(at 43.18 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4631,7 +4740,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 43.18 50.8 0)
+			(at 43.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,7 +4749,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 43.18 50.8 0)
+			(at 43.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4649,7 +4758,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 43.18 50.8 0)
+			(at 43.18 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4664,6 +4773,71 @@
 			(project "dcs_functionalDiagram_v5"
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 205.74 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19267961-379f-47b8-8631-2953319154c0")
+		(property "Reference" "#PWR013"
+			(at 205.74 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 208.28 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 205.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 205.74 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f86a144b-ca03-4596-be4c-f8cb4fd66cc4")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "#PWR013")
 					(unit 1)
 				)
 			)
@@ -4731,6 +4905,72 @@
 			(project ""
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
 					(reference "R1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 189.23 81.28 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b41005f-0c3a-4860-a724-d0456e531079")
+		(property "Reference" "#PWR015"
+			(at 189.23 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 189.23 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 189.23 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fb65096-6442-4562-afd7-3a5d6767e282")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -4805,6 +5045,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 43.18 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1e917522-74c3-40fe-a29c-076d53c3a433")
+		(property "Reference" "C2"
+			(at 47.244 52.578 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 46.99 54.864 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7d73961-48dd-46a9-b184-e940e6527326")
+		)
+		(pin "2"
+			(uuid "23dc48bc-a600-47b1-af64-6ebd6a158af1")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 215.9 78.74 0)
 		(mirror y)
@@ -4872,6 +5179,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+12V")
+		(at 87.63 53.34 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "26d931c7-e0b9-4524-b180-00b6b0b9771d")
+		(property "Reference" "#PWR010"
+			(at 87.63 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 87.63 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 87.63 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "39c2e4ed-223b-45a0-bd11-14f081e4dcf2")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:OPAMP")
 		(at 45.72 43.18 0)
 		(mirror x)
@@ -4882,7 +5255,7 @@
 		(dnp no)
 		(uuid "27f37e4c-1fbe-4b1f-8257-f66f225557cd")
 		(property "Reference" "U1"
-			(at 53.34 48.3302 0)
+			(at 46.482 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5197,7 +5570,7 @@
 		(dnp no)
 		(uuid "3402334e-af9b-4aca-95ea-cbaa2c7c8013")
 		(property "Reference" "U3"
-			(at 150.114 58.166 0)
+			(at 147.574 53.594 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5361,6 +5734,71 @@
 			(project "dcs_functionalDiagram_v5"
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
 					(reference "#PWR018")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 177.8 118.11 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "39722648-5afe-4960-ad39-57615eb713d3")
+		(property "Reference" "#PWR014"
+			(at 177.8 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 180.086 121.666 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 177.8 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 177.8 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 177.8 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "039670e3-0e8d-4e42-ae83-2a69bc15181b")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "#PWR014")
 					(unit 1)
 				)
 			)
@@ -5844,7 +6282,7 @@
 		(dnp no)
 		(uuid "50614c51-13dc-41a6-bdd6-bebe01a3add4")
 		(property "Reference" "U5"
-			(at 194.056 72.898 0)
+			(at 192.024 69.088 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6038,6 +6476,73 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 87.63 50.8 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "55621c29-8d74-44c9-9b62-df2dd6758766")
+		(property "Reference" "C3"
+			(at 91.694 50.038 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 91.44 52.324 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 87.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 87.63 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a320833f-e215-4a7d-929f-333de3056108")
+		)
+		(pin "2"
+			(uuid "cb68d6e9-d723-4f52-98bc-9f88090685ee")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_Small_US")
 		(at 91.44 161.29 180)
 		(unit 1)
@@ -6192,7 +6697,7 @@
 		(dnp no)
 		(uuid "5b0da1ff-1e33-4721-b013-1d55717b0454")
 		(property "Reference" "U6"
-			(at 182.626 109.22 0)
+			(at 180.34 105.664 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6296,6 +6801,138 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small")
+		(at 205.74 115.57 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5e93bd5a-9f2f-47b1-82b1-087c045f25d0")
+		(property "Reference" "C6"
+			(at 209.804 114.808 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "0.1u"
+			(at 209.55 117.094 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 205.74 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "68b1e90f-fe02-417e-b3ed-742c92e4dd3e")
+		)
+		(pin "2"
+			(uuid "fae13b3c-4171-417d-bb6e-b977fa1b2adb")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "C6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 149.86 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "624ba50f-c523-451a-9767-04a0c1f78c73")
+		(property "Reference" "#PWR011"
+			(at 146.05 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 154.94 60.96 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 149.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 149.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 149.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e1920239-e2c9-4d86-a63a-f07a49dba098")
+		)
+		(instances
+			(project "dcs_functionalDiagram_v5"
+				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Simulation_SPICE:OPAMP")
 		(at 90.17 40.64 0)
 		(mirror x)
@@ -6304,10 +6941,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "67ba6337-541e-418c-9af0-98a14a71e35a")
 		(property "Reference" "U2"
-			(at 97.79 45.7902 0)
+			(at 90.678 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6750,72 +7386,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 205.74 113.03 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "825bb93b-c977-44be-aee5-4bebe41127f6")
-		(property "Reference" "#PWR015"
-			(at 205.74 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 205.74 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 205.74 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 205.74 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 205.74 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "961c33c9-e733-4fd7-ab06-c2c4b29d5311")
-		)
-		(instances
-			(project "dcs_functionalDiagram_v5"
-				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
-					(reference "#PWR015")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 177.8 97.79 90)
 		(mirror x)
@@ -6878,71 +7448,6 @@
 			(project "dcs_functionalDiagram_v5"
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 144.78 59.69 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8c3a9abd-dac4-4e3f-95dc-31bc888f6265")
-		(property "Reference" "#PWR011"
-			(at 144.78 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 147.32 61.468 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 144.78 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 144.78 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 144.78 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "31ff94bf-074e-45b9-96e1-ddbae8098471")
-		)
-		(instances
-			(project "dcs_functionalDiagram_v5"
-				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
-					(reference "#PWR011")
 					(unit 1)
 				)
 			)
@@ -7161,7 +7666,7 @@
 		(dnp no)
 		(uuid "9a47fa9f-7530-4f99-9551-80b12d183801")
 		(property "Reference" "U7"
-			(at 211.582 109.22 0)
+			(at 208.788 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7631,26 +8136,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 87.63 48.26 180)
+		(lib_id "Device:C_Small")
+		(at 147.32 60.96 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a61c4e0b-8e0c-47c6-bd9c-e37d91a291ea")
-		(property "Reference" "#PWR010"
-			(at 87.63 44.45 0)
+		(uuid "a6270a3d-9261-44ab-945b-168fe8ea9802")
+		(property "Reference" "C4"
+			(at 150.368 56.388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 87.63 53.34 0)
+		(property "Value" "0.1u"
+			(at 150.114 58.674 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7658,7 +8161,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 87.63 48.26 0)
+			(at 147.32 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7666,8 +8169,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 87.63 48.26 0)
+		(property "Datasheet" "~"
+			(at 147.32 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7675,8 +8178,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 87.63 48.26 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 147.32 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7685,12 +8188,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "ec6da552-1240-4008-af79-5ae6083676a5")
+			(uuid "24f95b13-4fd3-4a6d-b3ea-1f0a084f4dff")
+		)
+		(pin "2"
+			(uuid "b598ec8c-ec2c-4610-95b8-f17eabcfc0fe")
 		)
 		(instances
 			(project "dcs_functionalDiagram_v5"
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
-					(reference "#PWR010")
+					(reference "C4")
 					(unit 1)
 				)
 			)
@@ -7859,7 +8365,7 @@
 		(dnp no)
 		(uuid "b2526898-6eb5-4dc1-a6e9-aed244a34233")
 		(property "Reference" "U4"
-			(at 149.352 92.71 0)
+			(at 148.082 87.884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8033,7 +8539,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 91.44 170.18 0)
+		(at 91.44 167.64 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8042,7 +8548,7 @@
 		(fields_autoplaced yes)
 		(uuid "ba0f1d31-2936-4dcf-a6fb-fcdd5e4e60be")
 		(property "Reference" "#PWR028"
-			(at 91.44 176.53 0)
+			(at 91.44 173.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8051,7 +8557,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 91.44 175.26 0)
+			(at 91.44 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8059,7 +8565,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 91.44 170.18 0)
+			(at 91.44 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8068,7 +8574,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 91.44 170.18 0)
+			(at 91.44 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8077,7 +8583,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 91.44 170.18 0)
+			(at 91.44 167.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8231,72 +8737,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 177.8 113.03 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c75ad184-3f8c-45b4-9485-df917918ab34")
-		(property "Reference" "#PWR014"
-			(at 177.8 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 177.8 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 177.8 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 177.8 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 177.8 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "87095085-f9b0-481b-af31-f0b8af66c3f8")
-		)
-		(instances
-			(project "dcs_functionalDiagram_v5"
-				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
-					(reference "#PWR014")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:C_Small")
 		(at 205.74 93.98 90)
 		(unit 1)
@@ -8380,7 +8820,7 @@
 				)
 			)
 		)
-		(property "Value" "1k"
+		(property "Value" "20k"
 			(at 143.51 38.1 90)
 			(effects
 				(font
@@ -8629,26 +9069,24 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 189.23 76.2 180)
+		(lib_id "Device:C_Small")
+		(at 189.23 78.74 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "da2159a1-95c4-4c23-bbd6-61bc85bb6a8a")
-		(property "Reference" "#PWR013"
-			(at 189.23 72.39 0)
+		(uuid "d91dbd34-178c-4a2f-a76e-1c444e8e252e")
+		(property "Reference" "C8"
+			(at 193.294 77.978 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 189.23 81.28 0)
+		(property "Value" "0.1u"
+			(at 193.04 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8656,7 +9094,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 189.23 76.2 0)
+			(at 189.23 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8664,8 +9102,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" ""
-			(at 189.23 76.2 0)
+		(property "Datasheet" "~"
+			(at 189.23 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8673,8 +9111,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 189.23 76.2 0)
+		(property "Description" "Unpolarized capacitor, small symbol"
+			(at 189.23 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8683,12 +9121,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "37f3d401-d828-4b5f-9665-a0b7cd408865")
+			(uuid "fbee6866-702a-425c-bb90-9a2b4ea13a10")
+		)
+		(pin "2"
+			(uuid "19c2fb70-bc28-4473-adb3-a8720043feb3")
 		)
 		(instances
 			(project "dcs_functionalDiagram_v5"
 				(path "/d64227ee-3d49-4ed7-af73-5d5352ab9f0b"
-					(reference "#PWR013")
+					(reference "C8")
 					(unit 1)
 				)
 			)
