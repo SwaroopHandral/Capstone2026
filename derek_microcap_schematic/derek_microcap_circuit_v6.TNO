@@ -3,11 +3,11 @@
 ***                                                                          ***
 ***                                                                          ***
 ***             Transient Analysis of derek_microcap_circuit_v6              ***
-***                          10/28/2025 10:37:24 PM                          ***
+***                           11/1/2025 5:05:00 PM                           ***
 ********************************************************************************
 Limits
 ======
-Maximum Run Time           10m
+Maximum Run Time           100m
 Output Start Time (tstart) 0
 Maximum Time Step          2u
 Number of Points           51
