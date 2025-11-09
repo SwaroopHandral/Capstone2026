@@ -1,0 +1,10 @@
+% motor parameters
+Vdc = 12;
+gearRatio = 30;
+R = 2.2;
+L = 2.6e-3;
+Ke = 0.257;
+Kt = Ke;
+J = 4.71e-4;
+b = 1.53e-3;
+Ks = 0.347;

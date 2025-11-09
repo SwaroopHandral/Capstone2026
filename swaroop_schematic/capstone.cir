@@ -7,12 +7,8 @@ Shape Version=11.00
 Screen=1920,1080
 MCAPVersion=12.2.0.3
 Key ID=Demo
-<<<<<<< HEAD
-NLCnt=194
-TXCnt=33
-=======
-NLCnt=172
-TXCnt=39
+NLCnt=208
+TXCnt=42
 
 [shapedef]
 Name=100
@@ -28,7 +24,6 @@ BlockLine="Line",72,48
 BlockLine="Line",72,64
 BlockLine="None",72,80
 FColor=None
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 
 [shapedef]
 Name=555
@@ -190,8 +185,8 @@ Current=32,16,16,16
 Name=Battery
 Definition=Battery
 Shape=Battery
-Mask=7937
-Used=51
+Mask=7425
+Used=74
 memo=Battery
 Label Offset=19,7,10,13
 PinCnt=2
@@ -203,11 +198,7 @@ Name=Ground
 Definition=Ground
 Shape=Ground
 Mask=1793
-<<<<<<< HEAD
-Used=315
-=======
-Used=257
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
+Used=332
 memo=Ground
 Label Offset=0,0,0,0
 PinCnt=1
@@ -218,7 +209,7 @@ Name=Opamp
 Definition=Opamp
 Shape=Opamp5
 Mask=5121
-Used=3
+Used=37
 memo=Opamp
 Label Offset=44,29,-14,39
 PinCnt=5
@@ -232,12 +223,8 @@ Pin="VCC",4,-1,5,14
 Name=Resistor
 Definition=Resistor
 Shape=Resistor
-Mask=6913
-<<<<<<< HEAD
-Used=221
-=======
-Used=148
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
+Mask=6401
+Used=215
 memo=Resistor
 Label Offset=18,6,8,11
 PinCnt=2
@@ -248,12 +235,8 @@ Pin="Minus",0,0,-14,-4
 Name=Capacitor
 Definition=Capacitor
 Shape=Capacitor
-Mask=7425
-<<<<<<< HEAD
-Used=52
-=======
-Used=22
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
+Mask=7169
+Used=31
 memo=Capacitor
 Label Offset=16,12,12,12
 PinCnt=2
@@ -265,6 +248,7 @@ Name=LM311_TI
 Definition=Subckt
 Shape=Comp6
 Mask=4224
+Used=7
 memo=Differential Comparator with Strobe
 Label Offset=33,-15,-2,24
 PinCnt=6
@@ -293,7 +277,7 @@ Name=DC_Motor
 Definition=Macro
 Shape=DC Motor
 Mask=4096
-Used=3
+Used=6
 memo=DC Motor macro
 Link=http://www.spectrum-soft.com/news/fall2007/dcmotor.shtm
 Label Offset=16,66,5,10
@@ -305,12 +289,10 @@ Pin="BEMF",a,5,4
 Pin="Torque",a,5,6
 
 [compdef]
-<<<<<<< HEAD
 Name=555
 Definition=Macro
 Shape=555
 Mask=20480
-Used=1
 memo=555 Timer Macro
 Label Offset=87,72,-20,88
 PinCnt=8
@@ -327,30 +309,31 @@ Pin="GND",a,5,13,3,-3
 Name=Voltage Source
 Definition=VSpice
 Shape=SPICE_V
-Mask=4865
-Used=55
+Mask=5377
+Used=54
 memo=Voltage Source
 Label Offset=19,13,15,13
 PinCnt=2
 Pin="Plus",6,0,-5,-6
 Pin="Minus",0,0,-20,-6
-=======
-Name=LM2917-8
+
+[compdef]
+Name=LM2917-82
 Definition=Subckt
 Shape=100
 Mask=14468
 Used=2
+memo=Voltage Source
 Label Offset=0,0,0,0
 PinCnt=8
+Pin="",
+Pin="",
 Pin="I1",a,-2,2
 Pin="I2",a,-2,4
 Pin="I3",a,-2,6
 Pin="I4",a,-2,8
 Pin="I5",a,-2,10
 Pin="I6",a,9,2
-Pin="I7",a,9,4
-Pin="I8",a,9,6
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 
 [Circuit]
 Window Placement=2,3, -1,-1, -8,-31, 26,26,1123,515
@@ -372,7 +355,7 @@ SpiceType=AMBIGUOUS
 Title_Block_Border=None
 Title_Block=False
 Show Nodes=False
-Show Voltages=True
+Show Voltages=False
 Show Current=False
 Show Power=False
 Show Condition=False
@@ -738,7 +721,6 @@ Pxs=832,240,896,240
 Pxs=768,200,768,208
 
 [Wire]
-<<<<<<< HEAD
 Pxs=656,440,656,448
 
 [Comp]
@@ -764,9 +746,6 @@ V
 Name=Ground
 Px=520,416
 Rot=7
-=======
-Pxs=768,272,768,280
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 
 [Wire]
 Pxs=896,240,896,336
@@ -1427,12 +1406,8 @@ ON=0,0,PACKAGE
 V
 
 [Wire]
-<<<<<<< HEAD
-Pxs=1792,768,1792,776
-Enable=FALSE
-=======
 Pxs=1792,744,1792,776
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
+Enable=FALSE
 
 [Wire]
 Pxs=1048,528,1048,632
@@ -1455,12 +1430,9 @@ Rot=7
 
 [Comp]
 Name=DC_Motor
-<<<<<<< HEAD
-Enable=FALSE
-=======
 Style=ShowPinText
 ShowPinMarkers=True
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
+Enable=FALSE
 Px=1848,680
 
 [Attr]
@@ -1791,8 +1763,9 @@ Rot=7
 Pxs=672,232,672,264
 
 [Comp]
-Name=LM2917-8
+Name=LM2917-82
 Style=ShowPinText
+Enable=FALSE
 ShowPackagePins=True
 Px=424,176
 
@@ -1812,27 +1785,35 @@ V
 
 [Wire]
 Pxs=376,192,408,192
+Enable=FALSE
 
 [Wire]
 Pxs=376,208,408,208
+Enable=FALSE
 
 [Wire]
 Pxs=376,224,408,224
+Enable=FALSE
 
 [Wire]
 Pxs=376,240,408,240
+Enable=FALSE
 
 [Wire]
 Pxs=376,256,408,256
+Enable=FALSE
 
 [Wire]
 Pxs=496,192,528,192
+Enable=FALSE
 
 [Wire]
 Pxs=496,208,528,208
+Enable=FALSE
 
 [Wire]
 Pxs=496,224,528,224
+Enable=FALSE
 
 [Grid Text]
 Text="reference from f to v chip input for testing"
@@ -1862,11 +1843,7 @@ CBorder=None
 
 [Grid Text]
 Text="VE"
-<<<<<<< HEAD
-Px=904,496
-=======
 Px=1016,328
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -1905,26 +1882,18 @@ JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-<<<<<<< HEAD
 Text="VE"
-Px=656,376
-=======
 Text="VE1"
 Px=768,208
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
 CBorder=None
 
 [Grid Text]
-<<<<<<< HEAD
 Text="VC"
-Px=656,448
-=======
 Text="VC1"
 Px=768,280
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
@@ -2148,6 +2117,7 @@ Px=376,192
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2156,6 +2126,7 @@ Px=376,208
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2164,6 +2135,7 @@ Px=376,224
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2172,6 +2144,7 @@ Px=376,240
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2180,6 +2153,7 @@ Px=376,256
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2188,6 +2162,7 @@ Px=528,192
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2196,6 +2171,7 @@ Px=528,208
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Grid Text]
@@ -2204,6 +2180,7 @@ Px=528,224
 GridSnap=True
 JustifyH=Left
 JustifyV=Bottom
+Enable=FALSE
 CBorder=None
 
 [Schematic]
@@ -2214,7 +2191,7 @@ CurrentSection 3=0
 Splitter.xs=0
 Splitter.ys=0
 TextQuad=4099
-Scale=1.3333333333333333
+Scale=1
 GridUser=10
 ShapeGroups="Main","Euro","Polarity","Main1","Main11","Electrolytic","GroundArrow","DeMorgan"
 CalcRMS=False
@@ -2402,15 +2379,9 @@ PrinterScale=1
 Scale 0=1
 Scale 1=1
 Scale 2=1
-<<<<<<< HEAD
-SB 3=301,336
+SB 3=13,555
 Scale 3=1.3333333333333333
-Px=1308,953
-=======
-SB 3=8,0
-Scale 3=1.3333333333333333
-Px=886,821
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
+Px=952,1010
 WinBackGround Color=#FFFFFF
 Select Color=#FF0000
 Anchor Color=#000000
@@ -2474,10 +2445,7 @@ Type=Text
 Print=False
 Enable=True
 Name=Models
-<<<<<<< HEAD
 SB 0=0,18
-=======
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 Font=Height=-15,FStyle=0,Color=#000000,Name=Courier New
 Comment Color=#008000
 WinBackGround Color=#FFFFFF
@@ -2581,7 +2549,6 @@ Text=
 Text=.INCLUDE C:\MC12\LIBRARY\OPAx197.LIB
 Text=.INCLUDE C:\MC12\LIBRARY\LM29x7.lib
 Text=.MODEL IRLZ44N NMOS ()
-<<<<<<< HEAD
 Text=*** From file C:\Users\shr20\mc12cd\library\UTILITY.LBR
 Text=*** Generic Opamp Model
 Text=.MODEL $GENERIC OPA (LEVEL=3 GBW=2.5MEG IBIAS=30p IOFF=3p ROUTAC=50 ROUTDC=75
@@ -2602,7 +2569,6 @@ Text=*** From file C:\Users\shr20\mc12cd\library\PMOPAMP.LBR
 Text=*** High-gain instrumentation opamp
 Text=.MODEL OP_06F OPA (LEVEL=3 A=3MEG C=50p CMRR=1MEG IBIAS=30n IOFF=750p ROUTAC=50
 Text=+ ROUTDC=75 VNS=-12.4 VOFF=200u VPS=12.4)
-=======
 Text=.SUBCKT LM2917-8 TACH+ CP1 CP2/IN+ EMIT COL v+ IN- TACH-/GND
 Text=R1  i1 80 10k
 Text=Q5  i6 83 81 0 QNN
@@ -2651,7 +2617,6 @@ Text=.model QNP PNP
 Text=.model D D
 Text=XU1 80 i8 i2 i3 i3 i7 i4 i5 i6 i8 LM29x7
 Text=.ends LM2917-8
->>>>>>> 426c9a95c7095941b0bc706eedd6f297fc35d3d9
 
 [InfoPage]
 InfoPage=True
@@ -2889,6 +2854,10 @@ ALIGNRIGHT=No
 ALIGNTOP=No
 ALIGNMIDDLES=No
 ALIGNBOTTOM=No
+
+[APage]
+Analysis=Transient
+Name="MAIN"
 
 [AC]
 WinID=2
@@ -3349,7 +3318,7 @@ Seed=0
 
 [Limits]
 Analysis=Transient
-TMax=1u
+TMax=1m
 TStart=0
 TStep=0
 NPts=51
@@ -3370,7 +3339,7 @@ YExp=v(VC)
 XRng=Auto
 YRng=Auto
 Options=LINEARX,LINEARY
-Enable=Enable
+Enable=DontRun
 Line Color=#0000FF
 Text Color=#0000FF
 Rainbow=False
@@ -3390,10 +3359,12 @@ Analysis=Transient
 Plt=1
 AliasID=2
 XExp=T
-YExp=v(VE)
-XRng=Auto
-YRng=Auto
+YExp=v(triout)
+XRng=0.001
+YRng=-0.00348273,-0.00348273
 Options=LINEARX,LINEARY
+Range Grid X=0.0002
+Range Grid Y=7.5e-15
 Enable=Enable
 Line Color=#FF0000
 Text Color=#FF0000
@@ -3608,6 +3579,7 @@ PlaceText=True
 
 [Pane]
 Analysis=Transient
+CurrentPage 0="MAIN"
 
 [Pane]
 Analysis=AC
