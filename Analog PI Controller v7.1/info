@@ -1,0 +1,819 @@
+{
+  "uuid": "b460dcb1391b7f9a639c5ed4c1e5d845",
+  "path": "Offline/Analog%20PI%20Controller%20v7.1",
+  "name": "Analog PI Controller v7.1",
+  "content": "",
+  "created_at": "2025-11-15 12:04:42",
+  "updated_at": "2025-11-15 14:57:22",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "0aa7be2db39975211817adc1b75d2fe4",
+      "title": "Schematic",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "522aca5098984d0391324f020c72f164": 4,
+        "2067920bd5e74324b2579eba52fa344a": 1,
+        "b0248eb51e084227889f2cb84eab79c4": 14,
+        "24eeb2ceca08480b92b847b6a310acda": 16,
+        "cef21a86de4f4166b2c221f33edb788a": 1,
+        "5144e41841ce44c8a7b9cba68cd3d0cb": 2,
+        "cbd09e3b9c444766af03eeb2eda2fdfd": 1,
+        "6964f5c2f23547a39d1b4f93605c59a8": 1,
+        "1effed6c3cf24da096dedbba9d5b9bf0": 1,
+        "064d873e21464445906f0bbcb7ae1b26": 1,
+        "b6500496787b4bb8850293be3e8cf14a": 1,
+        "7b090e841e4bce5dc590b0dd197a399b": 1,
+        "33c1cafbf7a94aff8ff2725d7b1c7bde": 1,
+        "d1b144f5b9c2405395291c8784b60580": 1,
+        "80f860afc23f438abf7a052eb65b9e5e": 1,
+        "684ca284eb284cfcbee0fe38085b27e1": 1,
+        "c647f9b96bc14188883bbec287c7ea5d": 1,
+        "11d91ee33e4b4ad8b8bcec8ae9c4db4a": 15
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Connector_TestPoint",
+          12,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "+12VREG,-12VREG,GND1,GND2,GND3,PIOUT,PWMOUT,SUMOUT,TP1,VCC,VERROR,VFB2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "0.1u",
+          13,
+          "C0603",
+          "C1,C2,C3,C4,C5,C7,C8,C15,C17,C18,C19,C20,C21",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1u",
+          1,
+          "C0603",
+          "C6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "4.7uF",
+          1,
+          "C0603",
+          "C9",
+          {
+            "Manufacturer Part": "GRM188R61E475KE11D",
+            "Manufacturer": "muRata(村田)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C90057"
+          }
+        ],
+        [
+          "100nF",
+          1,
+          "C0603",
+          "C10",
+          {
+            "Manufacturer Part": "GRM033R61E104KE14D",
+            "Manufacturer": "muRata(村田)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C76939"
+          }
+        ],
+        [
+          "4.7u",
+          2,
+          "C0603",
+          "C14,C16",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "470uF",
+          1,
+          "CAP-SMD_BD10.0-L10.3-W10.3-FD",
+          "CBULK",
+          {
+            "Manufacturer Part": "EEEFN1V471UP",
+            "Manufacturer": "PANASONIC(松下)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C494847"
+          }
+        ],
+        [
+          "Power",
+          1,
+          "CONN-TH_2P-P5.00_691137710002",
+          "CN1",
+          {
+            "Manufacturer Part": "691137710002",
+            "Manufacturer": "Wurth(伍尔特)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C5332011"
+          }
+        ],
+        [
+          "SK36A",
+          1,
+          "SMA_L4.3-W2.6-LS5.2-RD",
+          "D1",
+          {
+            "Manufacturer Part": "SK36A-LTP",
+            "Manufacturer": "MCC(美微科)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C106867"
+          }
+        ],
+        [
+          "ENCOUTA",
+          1,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "ENCOUTA",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "MotorConn",
+          1,
+          "CONN-SMD_6P-P2.54_14110613002000",
+          "MIN",
+          {
+            "Manufacturer Part": "14110613002000",
+            "Manufacturer": "Harting",
+            "Supplier": "Mouser",
+            "Supplier Part": "617-14110613002000"
+          }
+        ],
+        [
+          "IRLZ44NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q1",
+          {
+            "Manufacturer Part": "IRLZ44NPBF",
+            "Manufacturer": "Infineon(英飞凌)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C38774"
+          }
+        ],
+        [
+          "100k",
+          1,
+          "R0603",
+          "Q1PULL",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1k",
+          11,
+          "R0603",
+          "R1,R2,R3,R4,R5,R6,R7,R8,R9,R14,RBLEED",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "100",
+          1,
+          "R0603",
+          "RGATE",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "20k",
+          1,
+          "R0603",
+          "RPULL",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Buff/Err",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U1",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "P/I",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U2",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "Sum",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U3",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "Comp",
+          1,
+          "SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL",
+          "U4",
+          {
+            "Manufacturer Part": "LM311DR",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C12597"
+          }
+        ],
+        [
+          "MEA1D1212SC",
+          1,
+          "PWRM-TH_MEA1DXXXXSC",
+          "U5",
+          {
+            "Manufacturer Part": "MEA1D1212SC",
+            "Manufacturer": "YLPTEC(易川)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C5382235"
+          }
+        ],
+        [
+          "+12Reg",
+          1,
+          "TO-220-3_L10.2-W4.6-P2.54-L",
+          "U6",
+          {
+            "Manufacturer Part": "LM7812CT/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2872599"
+          }
+        ],
+        [
+          "-12Reg",
+          1,
+          "TO-220-3_L10.2-W4.6-P2.54-L",
+          "U7",
+          {
+            "Manufacturer Part": "LM7912CT/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C10116"
+          }
+        ],
+        [
+          "WaveGen",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U8",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "F/V",
+          1,
+          "SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL",
+          "U9",
+          {
+            "Manufacturer Part": "LM2917MX/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C914112"
+          }
+        ],
+        [
+          "VFB",
+          1,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "VFB1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "PTV09A-4020U-B104",
+          1,
+          "PTV09A4020FB103",
+          "VR1",
+          {
+            "Manufacturer Part": "PTV09A-4020U-B104",
+            "Manufacturer": "Bourns Inc.",
+            "Supplier": "Digi-Key",
+            "Supplier Part": "PTV09A-4020U-B104-ND"
+          }
+        ],
+        [
+          "100kΩ",
+          2,
+          "RES-ADJ-SMD_L4.8-W3.5-P2.50-BL-1",
+          "VR2,VR3",
+          {
+            "Manufacturer Part": "PVG5A104C03R00",
+            "Manufacturer": "BOURNS",
+            "Supplier": "LCSC",
+            "Supplier Part": "C7328709"
+          }
+        ],
+        [
+          "Vset",
+          1,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "VSET",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ]
+      ],
+      "updateTime": 1763235177,
+      "createTime": 1763226282,
+      "histories": [],
+      "created_at": "2025-11-15 12:04:42",
+      "updated_at": "2025-11-15 14:32:57"
+    },
+    {
+      "uuid": "285e0b21ddf6f717797758d3122f5556",
+      "puuid": "b460dcb1391b7f9a639c5ed4c1e5d845",
+      "title": "PCB_Analog PI Controller v7.1",
+      "filename": "PCB_Analog PI Controller v7.1.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "afd04fae875a45618e86a8b18178ca66": 2,
+        "0fade00ff17b4a2c9f7225e47438b045": 15,
+        "ceb310accae44e86bcefc5340f2d6934": 1,
+        "f8151fdc728a41ebbc304e11d39e5437": 18,
+        "d8f8382978a7446f8e8f71c956b0d192": 1,
+        "bf1de21af6774ad1a1d61c07a6a4a5e2": 1,
+        "58f4304a30774c5386fb7ec03364c01f": 1,
+        "fb8b10620b5a459d9b03fd14987346f4": 1,
+        "398691f1f785460098bbe5ee6590333c": 14,
+        "806a55eb4d3c40ab838f70f86785d85e": 4,
+        "71450838f2174409b429143f6acc9d2a": 1,
+        "992f830219c943239c12eb671d56de5f": 1,
+        "c6f62fc6b1e448a78a63450b82e4b83d": 2,
+        "0f2364c02f094100b1b3205c9d829099": 1,
+        "63ce2e0e705145e2bc717dc541e102cf": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "Connector_TestPoint",
+          12,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "+12VREG,-12VREG,GND1,GND2,GND3,PIOUT,PWMOUT,SUMOUT,TP1,VCC,VERROR,VFB2",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "ENCOUTA",
+          1,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "ENCOUTA",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "F/VIN",
+          1,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "F/VIN",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "VFB",
+          1,
+          "TESTPOINT:TESTPOINT_PAD_D1.5MM",
+          "VFB1",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "0.1u",
+          12,
+          "C0603",
+          "C1,C2,C3,C5,C7,C8,C15,C17,C18,C19,C20,C21",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1u",
+          1,
+          "C0603",
+          "C6",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "4.7u",
+          2,
+          "C0603",
+          "C14,C16",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "4.7uF",
+          1,
+          "C0603",
+          "C9",
+          {
+            "Manufacturer Part": "GRM188R61E475KE11D",
+            "Manufacturer": "muRata(村田)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C90057"
+          }
+        ],
+        [
+          "100nF",
+          1,
+          "C0603",
+          "C10",
+          {
+            "Manufacturer Part": "GRM033R61E104KE14D",
+            "Manufacturer": "muRata(村田)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C76939"
+          }
+        ],
+        [
+          "1u",
+          3,
+          "CASE-A_3216",
+          "C11,C12,C13",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "470uF",
+          1,
+          "CAP-SMD_BD10.0-L10.3-W10.3-FD",
+          "CBULK",
+          {
+            "Manufacturer Part": "EEEFN1V471UP",
+            "Manufacturer": "PANASONIC(松下)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C494847"
+          }
+        ],
+        [
+          "Power",
+          1,
+          "CONN-TH_2P-P5.00_691137710002",
+          "CN1",
+          {
+            "Manufacturer Part": "691137710002",
+            "Manufacturer": "Wurth(伍尔特)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C5332011"
+          }
+        ],
+        [
+          "SK36A",
+          1,
+          "SMA_L4.3-W2.6-LS5.2-RD",
+          "D1",
+          {
+            "Manufacturer Part": "SK36A-LTP",
+            "Manufacturer": "MCC(美微科)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C106867"
+          }
+        ],
+        [
+          "MotorConn",
+          1,
+          "CONN-SMD_6P-P2.54_14110613002000",
+          "MIN",
+          {
+            "Manufacturer Part": "14110613002000",
+            "Manufacturer": "Harting",
+            "Supplier": "Mouser",
+            "Supplier Part": "617-14110613002000"
+          }
+        ],
+        [
+          "IRLZ44NPBF",
+          1,
+          "TO-220-3_L10.0-W4.5-P2.54-T",
+          "Q1",
+          {
+            "Manufacturer Part": "IRLZ44NPBF",
+            "Manufacturer": "Infineon(英飞凌)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C38774"
+          }
+        ],
+        [
+          "100k",
+          1,
+          "R0603",
+          "Q1PULL",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "1k",
+          8,
+          "R0603",
+          "R1,R3,R4,R5,R7,R9,R14,RBLEED",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "10K",
+          3,
+          "R0603",
+          "R11,R12,R13",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "100",
+          1,
+          "R0603",
+          "RGATE",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "20k",
+          1,
+          "R0603",
+          "RPULL",
+          {
+            "Manufacturer Part": "",
+            "Manufacturer": "",
+            "Supplier": "",
+            "Supplier Part": ""
+          }
+        ],
+        [
+          "Buff/Err",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U1",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "P/I",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U2",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "Sum",
+          1,
+          "SOIC-8_L4.9-W3.9-P1.27-LS6.0-BL",
+          "U3",
+          {
+            "Manufacturer Part": "OPA2197ID",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C1347222"
+          }
+        ],
+        [
+          "Comp",
+          1,
+          "SOIC-8_L5.0-W4.0-P1.27-LS6.0-BL",
+          "U4",
+          {
+            "Manufacturer Part": "LM311DR",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C12597"
+          }
+        ],
+        [
+          "MEA1D1212SC",
+          1,
+          "PWRM-TH_MEA1DXXXXSC",
+          "U5",
+          {
+            "Manufacturer Part": "MEA1D1212SC",
+            "Manufacturer": "YLPTEC(易川)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C5382235"
+          }
+        ],
+        [
+          "+12Reg",
+          1,
+          "TO-220-3_L10.2-W4.6-P2.54-L",
+          "U6",
+          {
+            "Manufacturer Part": "LM7812CT/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2872599"
+          }
+        ],
+        [
+          "-12Reg",
+          1,
+          "TO-220-3_L10.2-W4.6-P2.54-L",
+          "U7",
+          {
+            "Manufacturer Part": "LM7912CT/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C10116"
+          }
+        ],
+        [
+          "F/V",
+          1,
+          "SOIC-14_L8.7-W3.9-P1.27-LS6.0-BL",
+          "U9",
+          {
+            "Manufacturer Part": "LM2917MX/NOPB",
+            "Manufacturer": "TI(德州仪器)",
+            "Supplier": "LCSC",
+            "Supplier Part": "C914112"
+          }
+        ],
+        [
+          "XR2206CP",
+          1,
+          "PDIP-16_L20.1-W6.4-P2.54-LS7.94-BL",
+          "U10",
+          {
+            "Manufacturer Part": "XR2206CP",
+            "Manufacturer": "null",
+            "Supplier": "LCSC",
+            "Supplier Part": "C9900111950"
+          }
+        ],
+        [
+          "PTV09A-4020U-B104",
+          1,
+          "PTV09A4020FB103",
+          "VR1",
+          {
+            "Manufacturer Part": "PTV09A-4020U-B104",
+            "Manufacturer": "Bourns Inc.",
+            "Supplier": "Digi-Key",
+            "Supplier Part": "PTV09A-4020U-B104-ND"
+          }
+        ],
+        [
+          "100kΩ",
+          2,
+          "RES-ADJ-SMD_L4.8-W3.5-P2.50-BL-1",
+          "VR2,VR3",
+          {
+            "Manufacturer Part": "PVG5A104C03R00",
+            "Manufacturer": "BOURNS",
+            "Supplier": "LCSC",
+            "Supplier Part": "C7328709"
+          }
+        ]
+      ],
+      "updateTime": 1763236642,
+      "createTime": 1763226556,
+      "histories": [],
+      "created_at": "2025-11-15 12:09:16",
+      "updated_at": "2025-11-15 14:57:22"
+    }
+  ],
+  "sort": [],
+  "title": "Analog PI Controller v7.1",
+  "foldername": "Analog PI Controller v7.1",
+  "schfilename": "Analog PI Controller v7.1.json",
+  "schfilemtime": 1763235177161
+}
