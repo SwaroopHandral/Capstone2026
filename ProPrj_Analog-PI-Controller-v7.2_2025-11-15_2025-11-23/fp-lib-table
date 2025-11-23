@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "ProPrj_Analog-PI-Controller-v7.2_2025-11-15_2025-11-23")(type "KiCad")(uri "$(KIPRJMOD)/ProPrj_Analog-PI-Controller-v7.2_2025-11-15_2025-11-23.pretty")(options "")(descr ""))
+)
