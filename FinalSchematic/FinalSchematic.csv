@@ -1,0 +1,29 @@
+Reference,Qty,Value,DNP,Exclude from BOM,Exclude from Board,Footprint,Datasheet
+"Bias_Pot?,FV_Pot?,Ki_Pot?,Kp_Pot?,R1,R2,R3,R4,R7,R8,R9,R_BLEED?,Vsp_Pot?",13,100k,,,,,~
+"C1,C2,C3,C4,C6,C7,C8,C13,C14,C15,C16,C17,C18,C19,C20,C23",16,0.1u,,,,,~
+C5,1,0.027u,,,,,~
+"C9,C11,C12,C21",4,1u,,,,,~
+C10,1,3.9n,,,,,~
+C22,1,2.7n,,,,,~
+D1,1,15SO945,,,,,~
+M1,1,Pololu 4752,,,,,~
+Q1,1,IRLZ44N,,,,Package_TO_SOT_THT:TO-220-3_Vertical,http://www.irf.com/product-info/datasheets/data/irlz44n.pdf
+R5,1,1k,,,,,~
+R6,1,25k,,,,,~
+R10,1,470,,,,,~
+"R11,R20,R21",3,10k,,,,,~
+R12,1,82k,,,,,~
+R13,1,56k,,,,,~
+R14,1,51k,,,,,~
+"R15,R18,R19",3,20k,,,,,~
+"R16,R17",2,5.1k,,,,,~
+RPULL?,1,2k,,,,,~
+RSHUNT?,1,1,,,,,~
+"U1,U2,U3,U4,U8,U12",6,OPA2197xD,,,,Package_SO:SOIC-8_3.9x4.9mm_P1.27mm,http://www.ti.com/lit/ds/symlink/opa2197.pdf
+U5,1,LM311,,,,,https://www.st.com/resource/en/datasheet/lm311.pdf
+U6,1,MCP1407-E_SN,,,,MCP1407-E_SN:SOIC127P599X175-8N,
+U7,1,LM2917MX-8_NOPB,,,,LM2917MX-8_NOPB:SOIC127P599X175-8N,
+U9,1,LM7812CT,,,,Package_TO_SOT_THT:TO-220-3_Vertical,hhttps://www.onsemi.com/pub/Collateral/MC7900-D.PDF
+U10,1,LM7912CT,,,,Package_TO_SOT_THT:TO-220-3_Vertical,hhttps://www.onsemi.com/pub/Collateral/MC7900-D.PDF
+U11,1,MEA1D1215SC,,,,MEA1D1215SC:CONV_MEA1D1215SC,
+U13,1,XR2206CP-F,,,,PDIP16_300MIL_MXL,XR2206CP-F

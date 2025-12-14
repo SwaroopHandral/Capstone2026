@@ -5898,16 +5898,6 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 172.72) (xy 90.17 171.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e227f93f-6d2c-4a79-b3f2-63d3fdc08860")
-	)
-	(wire
-		(pts
 			(xy 127 76.2) (xy 124.46 76.2)
 		)
 		(stroke
@@ -8122,7 +8112,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "0.027u"
 			(at 133.35 101.6 90)
 			(effects
 				(font
@@ -12585,6 +12575,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 90.17 175.26 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a3d3cbdf-c0d9-43f4-bf4b-62157a0d0c73")
+		(property "Reference" "RSHUNT"
+			(at 92.71 173.9899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "1"
+			(at 92.71 176.5299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 89.154 175.006 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 90.17 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 90.17 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "1fdd2ca9-9051-4e24-a195-0f438e3aada7")
+		)
+		(pin "1"
+			(uuid "f46beaa3-0983-44a6-b72c-64ac1a9a00e2")
+		)
+		(instances
+			(project "FinalSchematic"
+				(path "/3fb329af-5fd6-422e-bf74-f8f2d2cf8848"
+					(reference "RSHUNT")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_US")
 		(at 60.96 153.67 0)
 		(unit 1)
@@ -13607,7 +13667,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 265.43 134.112 90)
 			(effects
 				(font
@@ -13925,7 +13985,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 172.72 0)
+		(at 90.17 179.07 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13934,7 +13994,7 @@
 		(fields_autoplaced yes)
 		(uuid "c865aaf1-a66f-4e4f-9037-23ffc11dfb95")
 		(property "Reference" "#PWR016"
-			(at 90.17 179.07 0)
+			(at 90.17 185.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13943,7 +14003,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 177.8 0)
+			(at 90.17 184.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13951,7 +14011,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 172.72 0)
+			(at 90.17 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13960,7 +14020,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 172.72 0)
+			(at 90.17 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13969,7 +14029,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 172.72 0)
+			(at 90.17 179.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14234,7 +14294,7 @@
 				)
 			)
 		)
-		(property "Value" "0.1u"
+		(property "Value" "1u"
 			(at 173.736 127.254 0)
 			(effects
 				(font
