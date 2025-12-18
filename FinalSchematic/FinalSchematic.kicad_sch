@@ -3620,6 +3620,12 @@
 		(uuid "958b7bfd-d7f6-4de8-9f86-050b22b1fbfc")
 	)
 	(junction
+		(at 184.15 80.01)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "965598fc-37b1-4c85-b9cf-1e0bc7024cdb")
+	)
+	(junction
 		(at 246.38 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4315,6 +4321,16 @@
 	)
 	(wire
 		(pts
+			(xy 195.58 80.01) (xy 196.85 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "25060071-b286-44e2-a8b9-2b39b3c04eeb")
+	)
+	(wire
+		(pts
 			(xy 52.07 127) (xy 52.07 135.89)
 		)
 		(stroke
@@ -4835,6 +4851,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 90.17) (xy 187.96 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62d8a7db-f0fa-434a-9d00-39d5b580af30")
+	)
+	(wire
+		(pts
 			(xy 80.01 38.1) (xy 80.01 40.64)
 		)
 		(stroke
@@ -4885,7 +4911,7 @@
 	)
 	(wire
 		(pts
-			(xy 181.61 80.01) (xy 196.85 80.01)
+			(xy 181.61 80.01) (xy 184.15 80.01)
 		)
 		(stroke
 			(width 0)
@@ -5072,6 +5098,16 @@
 			(type default)
 		)
 		(uuid "83d69428-1ebc-49d5-b9c7-0450c71d0c30")
+	)
+	(wire
+		(pts
+			(xy 184.15 90.17) (xy 184.15 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "840825b9-abf8-4aa9-abbe-76db8b87f258")
 	)
 	(wire
 		(pts
@@ -6145,6 +6181,16 @@
 	)
 	(wire
 		(pts
+			(xy 184.15 80.01) (xy 187.96 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbac3bce-fb3f-4021-806c-eaa3a7d76326")
+	)
+	(wire
+		(pts
 			(xy 100.33 124.46) (xy 120.65 124.46)
 		)
 		(stroke
@@ -6254,7 +6300,7 @@
 		(uuid "1949d0af-5a08-41b2-af37-4e79ed0e8ccd")
 	)
 	(label "V Control"
-		(at 187.96 80.01 0)
+		(at 187.96 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9113,7 +9159,7 @@
 				)
 			)
 		)
-		(property "Value" "100k"
+		(property "Value" "1Meg"
 			(at 133.35 90.17 90)
 			(effects
 				(font
@@ -11382,6 +11428,73 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
+		(at 191.77 80.01 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "73ad9995-41ee-4f66-a103-882167b47c09")
+		(property "Reference" "R23"
+			(at 191.77 77.216 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "3k"
+			(at 191.77 82.55 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 192.024 78.994 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 191.77 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c76db6aa-d0f2-4c6b-a671-7d89511b6e41")
+		)
+		(pin "1"
+			(uuid "0029269b-41ab-49d8-a962-25a43fc2dcc2")
+		)
+		(instances
+			(project "FinalSchematic"
+				(path "/3fb329af-5fd6-422e-bf74-f8f2d2cf8848"
+					(reference "R23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
 		(at 193.04 123.19 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13069,7 +13182,7 @@
 				)
 			)
 		)
-		(property "Value" "25k"
+		(property "Value" "10k"
 			(at 133.35 64.77 90)
 			(effects
 				(font
