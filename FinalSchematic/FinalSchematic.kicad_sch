@@ -3867,10 +3867,6 @@
 		(at 257.81 118.11)
 		(uuid "f9b04b67-060c-4825-b66c-98eb532dfcbc")
 	)
-	(no_connect
-		(at 143.51 135.89)
-		(uuid "ffbbf7ef-5636-498e-b12b-714ae60ea142")
-	)
 	(bus_entry
 		(at 115.57 15.24)
 		(size 2.54 2.54)
@@ -5142,6 +5138,16 @@
 	)
 	(wire
 		(pts
+			(xy 144.78 128.27) (xy 148.59 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75cb54b7-5592-4aca-9e66-05f64cee7b0c")
+	)
+	(wire
+		(pts
 			(xy 57.15 116.84) (xy 57.15 113.03)
 		)
 		(stroke
@@ -5859,6 +5865,16 @@
 			(type default)
 		)
 		(uuid "c39c3556-e095-4769-ad78-ff560bdeb653")
+	)
+	(wire
+		(pts
+			(xy 143.51 135.89) (xy 148.59 135.89)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4657106-1759-451f-9b6d-02849084ccd8")
 	)
 	(wire
 		(pts
@@ -6812,10 +6828,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "02910e7d-e334-44e1-b11f-c449f68c459b")
 		(property "Reference" "PV37W104C01B00_C"
-			(at 139.7 129.54 90)
+			(at 133.35 129.54 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9103,7 +9118,7 @@
 				)
 			)
 		)
-		(property "Value" "0.027u"
+		(property "Value" "0.47u"
 			(at 133.35 101.6 90)
 			(effects
 				(font
@@ -13418,6 +13433,71 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 144.78 128.27 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "84f77328-707e-4da3-ab74-0198eee532af")
+		(property "Reference" "#PWR072"
+			(at 144.78 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 144.78 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 144.78 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 144.78 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 144.78 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5278137e-e857-49b2-9084-57d752773869")
+		)
+		(instances
+			(project "FinalSchematic"
+				(path "/3fb329af-5fd6-422e-bf74-f8f2d2cf8848"
+					(reference "#PWR072")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 262.89 123.19 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -13741,6 +13821,73 @@
 			(project "FinalSchematic"
 				(path "/3fb329af-5fd6-422e-bf74-f8f2d2cf8848"
 					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 148.59 132.08 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9460c627-e106-4783-bf56-c722423dbe73")
+		(property "Reference" "R30"
+			(at 152.4 130.048 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100k"
+			(at 152.4 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 147.574 131.826 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 148.59 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 148.59 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "7e7458be-c8e6-4e17-8c4a-9ff418321d0a")
+		)
+		(pin "1"
+			(uuid "95fcd5a8-3bc8-4779-a3bf-8fbc3927b467")
+		)
+		(instances
+			(project "FinalSchematic"
+				(path "/3fb329af-5fd6-422e-bf74-f8f2d2cf8848"
+					(reference "R30")
 					(unit 1)
 				)
 			)
@@ -15256,28 +15403,28 @@
 			)
 		)
 		(pin "1"
-			(uuid "f68e6cb1-bf99-428b-a8b9-1cd8fa009b7f")
+			(uuid "f68e6cb1-bf99-428b-a8b9-1cd8fa009b80")
 		)
 		(pin "7"
-			(uuid "8272ddf3-60b2-45fc-91d4-b41bc4ff4e9c")
+			(uuid "8272ddf3-60b2-45fc-91d4-b41bc4ff4e9d")
 		)
 		(pin "4"
 			(uuid "928a1b67-e0c3-4c42-be89-98b50c2808f8")
 		)
 		(pin "3"
-			(uuid "3b035436-3c62-4a71-b581-bdf4176744af")
+			(uuid "3b035436-3c62-4a71-b581-bdf4176744b0")
 		)
 		(pin "8"
 			(uuid "b19ac9ea-fb07-42a7-aaef-c4f6a62cb2ba")
 		)
 		(pin "2"
-			(uuid "93515b69-00a6-416b-8540-bdda67484ea2")
+			(uuid "93515b69-00a6-416b-8540-bdda67484ea3")
 		)
 		(pin "5"
-			(uuid "6d55e881-beda-40ad-9c59-fd03367af35d")
+			(uuid "6d55e881-beda-40ad-9c59-fd03367af35e")
 		)
 		(pin "6"
-			(uuid "9ab491f5-fa45-4ae7-855c-4de2953da03f")
+			(uuid "9ab491f5-fa45-4ae7-855c-4de2953da040")
 		)
 		(instances
 			(project ""
@@ -15874,22 +16021,22 @@
 			)
 		)
 		(pin "1"
-			(uuid "f68e6cb1-bf99-428b-a8b9-1cd8fa009b7d")
+			(uuid "f68e6cb1-bf99-428b-a8b9-1cd8fa009b81")
 		)
 		(pin "7"
 			(uuid "b7623a59-997d-4c4a-a154-3410a3bbc5f9")
 		)
 		(pin "4"
-			(uuid "928a1b67-e0c3-4c42-be89-98b50c2808f6")
+			(uuid "928a1b67-e0c3-4c42-be89-98b50c2808f9")
 		)
 		(pin "3"
-			(uuid "3b035436-3c62-4a71-b581-bdf4176744ad")
+			(uuid "3b035436-3c62-4a71-b581-bdf4176744b1")
 		)
 		(pin "8"
-			(uuid "b19ac9ea-fb07-42a7-aaef-c4f6a62cb2b8")
+			(uuid "b19ac9ea-fb07-42a7-aaef-c4f6a62cb2bb")
 		)
 		(pin "2"
-			(uuid "93515b69-00a6-416b-8540-bdda67484ea0")
+			(uuid "93515b69-00a6-416b-8540-bdda67484ea4")
 		)
 		(pin "5"
 			(uuid "82a3463d-6a0b-4588-a87a-9a8f70f0e4a2")
@@ -16161,25 +16308,25 @@
 			(uuid "7ddcfa91-fd3b-4706-bd55-9768032448be")
 		)
 		(pin "7"
-			(uuid "8272ddf3-60b2-45fc-91d4-b41bc4ff4e9b")
+			(uuid "8272ddf3-60b2-45fc-91d4-b41bc4ff4e9e")
 		)
 		(pin "4"
-			(uuid "928a1b67-e0c3-4c42-be89-98b50c2808f7")
+			(uuid "928a1b67-e0c3-4c42-be89-98b50c2808fa")
 		)
 		(pin "3"
 			(uuid "4893ed21-340d-4f7e-bde1-e8c05cf2d271")
 		)
 		(pin "8"
-			(uuid "b19ac9ea-fb07-42a7-aaef-c4f6a62cb2b9")
+			(uuid "b19ac9ea-fb07-42a7-aaef-c4f6a62cb2bc")
 		)
 		(pin "2"
 			(uuid "134c5bc4-068b-489f-9692-66d6621080f4")
 		)
 		(pin "5"
-			(uuid "6d55e881-beda-40ad-9c59-fd03367af35c")
+			(uuid "6d55e881-beda-40ad-9c59-fd03367af35f")
 		)
 		(pin "6"
-			(uuid "9ab491f5-fa45-4ae7-855c-4de2953da03e")
+			(uuid "9ab491f5-fa45-4ae7-855c-4de2953da041")
 		)
 		(instances
 			(project "FinalSchematic"
