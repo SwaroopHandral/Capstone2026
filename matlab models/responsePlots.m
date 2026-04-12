@@ -1,5 +1,4 @@
 %% Response plot script
-%% - Plots each measurement in its own figure
 %% - Overlays the three step responses in one figure
 %% - Prints average steady-state error
 
@@ -10,9 +9,6 @@ files = {
     '2V_stepResponse.csv'
     '4V_stepResponse.csv'
     '6V_stepResponse.csv'
-    'reasonableLoad_27V.csv'
-    'reasonableLoad_42V.csv'
-    'reasonableLoad_6V.csv'
 };
 
 %% Plot titles
@@ -20,23 +16,14 @@ plotTitles = {
     '2 V Setpoint -- Step Response'
     '4 V Setpoint -- Step Response'
     '6 V Setpoint -- Step Response'
-    'Reasonable Load -- 2.7 V Setpoint'
-    'Reasonable Load -- 4.2 V Setpoint'
-    'Reasonable Load -- 6.5 V Setpoint'
 };
 
-%% Flags for which files are step responses
-isStepResponse = [true true true false false false];
-
 %% Labels
-% Assumption:
-%   Channel 1 = Feedback
-%   Channel 2 = Setpoint
 feedbackLabel = 'Feedback';
 setpointLabel = 'Setpoint';
 
 %% Step-response legend values
-stepVals = [2 4 6];
+stepVals = [2.15, 4.06, 6.25];
 
 %% Overlay colors for the 3 step responses
 stepColors = [
@@ -69,8 +56,6 @@ title('Overlayed Step Responses');
 set(gca, 'FontSize', 12);
 
 %% Main loop
-stepIdx = 0;
-
 for k = 1:numel(files)
     fileName  = files{k};
     plotTitle = plotTitles{k};
@@ -143,44 +128,19 @@ for k = 1:numel(files)
         setpoint_plot = setpoint;
     end
 
-    %% Individual figure
-    figure('Position', [100 100 750 525]);
-    plot(t, feedback_plot, 'LineWidth', 1.8, 'DisplayName', feedbackLabel); hold on;
-    plot(t, setpoint_plot, 'LineWidth', 1.8, 'DisplayName', setpointLabel);
+    %% Plot on overlay figure
+    plot(t, feedback_plot, ...
+        'LineWidth', 2.2, ...
+        'Color', stepColors(k, :), ...
+        'DisplayName', sprintf('Feedback: %.2f V step', stepVals(k)));
 
-    grid on;
-    box on;
-    xlabel('Time (s)');
-    ylabel('Voltage (V)');
-    title(plotTitle);
-    legend('Location', 'best');
-    set(gca, 'FontSize', 12);
+    plot(t, setpoint_plot, '--', ...
+        'LineWidth', 1.4, ...
+        'Color', stepColors(k, :), ...
+        'HandleVisibility', 'off');
 
-    xlim([min(t), max(t)]);
-
-    ymin = min([feedback_plot; setpoint_plot]);
-    ymax = max([feedback_plot; setpoint_plot]);
-    ypad = 0.05 * (ymax - ymin + eps);
-    ylim([ymin - ypad, ymax + ypad]);
-
-    %% Overlay the 3 step responses
-    if isStepResponse(k)
-        stepIdx = stepIdx + 1;
-
-        figure(overlayFig);
-        plot(t, feedback_plot, ...
-            'LineWidth', 2.2, ...
-            'Color', stepColors(stepIdx, :), ...
-            'DisplayName', sprintf('Feedback: %d V step', stepVals(stepIdx)));
-
-        plot(t, setpoint_plot, '--', ...
-            'LineWidth', 1.4, ...
-            'Color', stepColors(stepIdx, :), ...
-            'HandleVisibility', 'off');
-
-        overlayY = [overlayY; feedback_plot; setpoint_plot];
-        overlayT = [overlayT; t];
-    end
+    overlayY = [overlayY; feedback_plot; setpoint_plot];
+    overlayT = [overlayT; t];
 
     %% Print results
     fprintf('%s\n', plotTitle);
@@ -199,12 +159,9 @@ for k = 1:numel(files)
 end
 
 %% Final formatting for overlay figure
-figure(overlayFig);
 legend('Location', 'best');
 
-if ~isempty(overlayT)
-    xlim([min(overlayT), max(overlayT)]);
-end
+xlim([min(overlayT), 2]);
 
 if ~isempty(overlayY)
     ymin = min(overlayY);
