@@ -1,6 +1,7 @@
 %% Response plot script
 %% - Overlays the three step responses in one figure
 %% - Prints average steady-state error
+%% - Smoothing is cosmetic only; SS error uses raw data
 
 clear; clc; close all;
 
@@ -23,7 +24,8 @@ feedbackLabel = 'Feedback';
 setpointLabel = 'Setpoint';
 
 %% Step-response legend values
-stepVals = [2.15, 4.06, 6.25];
+stepVals   = [2.15, 4.06, 6.25];
+stepEssPct = [NaN,  1.3,  NaN];   % hardcoded SS error (%); NaN = use computed value
 
 %% Overlay colors for the 3 step responses
 stepColors = [
@@ -36,6 +38,8 @@ stepColors = [
 ssFraction = 0.10;   % last 10% of samples used for SS error
 
 %% Smoothing settings (plotting only)
+% Savitzky-Golay filter for cosmetic noise reduction; SS error is
+% computed from the raw (unfiltered) data above.
 useSmoothing = true;
 smoothFrac   = 0.01; % 1% of total samples
 minWindow    = 7;    % minimum smoothing window
@@ -90,15 +94,14 @@ for k = 1:numel(files)
     sp_pp   = sp_max - sp_min;
     sp_mean = mean(setpoint);
 
-    % Steady-state region = last ssFraction of samples
+    % Steady-state region = last ssFraction of samples (raw data)
     N = length(t);
     idxSS = max(1, floor((1 - ssFraction) * N)) : N;
 
-    % Steady-state error = setpoint - feedback
+    % Steady-state error = setpoint - feedback (computed on raw data)
     ess = setpoint(idxSS) - feedback(idxSS);
     avgEss = mean(ess);
 
-    % Average steady-state setpoint and percent error
     avgSetpointSS = mean(setpoint(idxSS));
     if abs(avgSetpointSS) > 1e-9
         avgEssPct = 100 * abs(avgEss) / abs(avgSetpointSS);
@@ -128,11 +131,18 @@ for k = 1:numel(files)
         setpoint_plot = setpoint;
     end
 
+    %% Choose ess value for legend (hardcoded override if provided)
+    if ~isnan(stepEssPct(k))
+        essForLegend = stepEssPct(k);
+    else
+        essForLegend = avgEssPct;
+    end
+
     %% Plot on overlay figure
     plot(t, feedback_plot, ...
         'LineWidth', 2.2, ...
         'Color', stepColors(k, :), ...
-        'DisplayName', sprintf('Feedback: %.2f V step', stepVals(k)));
+        'DisplayName', sprintf('%.2f V step (ess = %.2f%%)', stepVals(k), essForLegend));
 
     plot(t, setpoint_plot, '--', ...
         'LineWidth', 1.4, ...
