@@ -16,8 +16,8 @@ Gfv = 1 / (1 + s*Rfv*Cfv);
 P = Gm * Gfv;
 
 %% choose PI zero and crossover target
-fz = 11.7;
-fc = 10;
+fz = 3.29;
+fc = 24.5;
 
 wz = 2*pi*fz;
 wc = 2*pi*fc;
